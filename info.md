@@ -1,0 +1,111 @@
+# Prof. Paulo Pinheiro
+
+## 2022.1
+
+### Slides
+
+#### 1- Apresentação
+
+1. Apresentação do professor
+2. Formação acadêmica
+3. Pesquisa
+4. Disciplinas já ministradas
+5. Disciplinas atuais
+
+#### 2- Conceitos Iniciais
+
+* Cálculo proposicional
+* Aspectos sintáticos e semânticos
+* Proposições e
+  * Enunciado ou sentença
+* Princípios da lógica clássica
+  * Princípio da identidade
+  * Princípio da não-contradição
+  * Princípio do terceiro excluído
+* Valores das proposições
+* Proposições simples e compostas
+* Conectivos proposicionais
+* Tabela verdade
+
+~~~tex
+\documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{eso-pic}
+\usepackage{mathrsfs}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{wallpaper}
+\usepackage{bbm}
+\usepackage{cooltooltips}
+\usepackage{eso-pic}
+\usepackage{everyshi}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{ifthen}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{animate}
+\usepackage[singlespacing]{setspace}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\setbeamertemplate{caption}[numbered]
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}} 
+\setbeamercolor{frametitle}{fg=red,bg=white}
+
+\hypersetup{pdfpagemode=FullScreen}
+\renewcommand*{\UrlFont}{\normalfont}
+
+\usetheme{Goettingen}
+\useinnertheme{circles}
+\beamertemplatenavigationsymbolsempty
+
+\setbeamerfont{page number in head/foot}{size=\large}
+\setbeamertemplate{footline}[frame number]
+% \includegraphics[scale=1.2, angle=45]{overleaf-logo}
+~~~
+
+~~~tex
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.25\textwidth]{mesh}
+    \caption{a nice plot}
+    \label{fig:mesh1}
+\end{figure}
+~~~
+
+~~~tex
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+\color{red}\rule{\linewidth}{4pt}
+
+Left Part
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+\color{blue}\rule{\linewidth}{4pt}
+
+Right Part
+\end{column}%
+\end{columns}
+\end{frame}
+~~~
