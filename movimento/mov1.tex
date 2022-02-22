@@ -1,0 +1,93 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\graphicspath{{./imgs/}}
+\setbeamertemplate{caption}[numbered]
+\setbeamercovered{transparent}
+
+\usetheme{Warsaw}
+\usecolortheme{default}
+
+\title{Movimento e dinâmica} 
+\author[Paulo Pinheiro]
+{Dr. Paulo Pinheiro\inst{1}}
+\institute[UNIFAP]
+{
+    \inst{1}
+    Centro Universitário Paraíso do Ceará\\
+    UNIFAP
+}
+
+\date{Última atualização:\\ \today}
+\logo{\large \LaTeX{}}
+\logo{\includegraphics[height=0.8cm]{UNIFAP.png}}
+%
+\begin{document}
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+%
+% Remove logo from the next slides
+\logo{}
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+%--------------------  FRAMES  ------------------------
+%%
+% Lists frame
+%%
+\section{Introdução}
+%
+\subsection{Preparação}
+%
+\begin{frame}{Formação inicial}
+    \begin{columns}[T] % align columns
+        \begin{column}{.7\textwidth}
+            \textbf{Formação Acadêmica}
+            \begin{itemize}
+                \item<1-> Ms. e Dr. em Eng. de Teleinformática
+                \item<1-> Bacharel em Física
+                \item<1-> Graduando em Eng. da Computação
+            \end{itemize}
+            %
+            \vspace{0.2cm}
+            %
+            %\pause
+            \textbf{Atuação Acadêmica}
+            \begin{itemize}
+                \item<2-> Professor de ensino superior de cursos de Engenharia e TI
+                \item<2-> Instrutor de cursos técnicos nas áreas de TI e elétrica
+                \item<2-> Gerente de projetos e inovação
+            \end{itemize}
+        \end{column}%
+        %
+        \hfill%
+        %
+        \begin{column}{.35\textwidth}
+            
+            
+        \end{column}%
+    \end{columns}
+\end{frame}
+%
+\subsection{Conceitos iniciais}
+%%
+\section{Conceitos iniciais}
+%
+\subsection{Grandezas}
+%
+\subsection{Análise dimensional}
+%
+\subsection{Notação científica}
+%
+\subsection{Múltiplos e submúltiplos}
+%%
+\section{Movimento}
+
+\end{document}

@@ -7,6 +7,7 @@
 
 \graphicspath{{./imgs/}}
 \setbeamertemplate{caption}[numbered]
+\setbeamercovered{transparent}
 
 \usetheme{Warsaw}
 \usecolortheme{default}
@@ -36,25 +37,29 @@
 %--------------------  FRAMES  ------------------------
 %%
 % Lists frame
+%%
 \section{Apresentação}
+%
 \subsection{Formação}
+%
 \begin{frame}{Formação}
     \begin{columns}[T] % align columns
         \begin{column}{.7\textwidth}
             \textbf{Formação Acadêmica}
             \begin{itemize}
-                \item Ms. e Dr. em Eng. de Teleinformática
-                \item Bacharel em Física
-                \item Graduando em Eng. da Computação
+                \item<1-> Ms. e Dr. em Eng. de Teleinformática
+                \item<1-> Bacharel em Física
+                \item<1-> Graduando em Eng. da Computação
             \end{itemize}
             %
             \vspace{0.2cm}
             %
+            %\pause
             \textbf{Atuação Acadêmica}
             \begin{itemize}
-                \item Professor de ensino superior de cursos de Engenharia e TI
-                \item Instrutor de cursos técnicos nas áreas de TI e elétrica
-                \item Gerente de projetos e inovação
+                \item<2-> Professor de ensino superior de cursos de Engenharia e TI
+                \item<2-> Instrutor de cursos técnicos nas áreas de TI e elétrica
+                \item<2-> Gerente de projetos e inovação
             \end{itemize}
         \end{column}%
         %
@@ -70,8 +75,9 @@
         \end{column}%
     \end{columns}
 \end{frame}
-%%
+%
 \subsection{Pesquisa}
+%
 \begin{frame}{Pesquisa acadêmica}
     \begin{columns}[T] % align columns
         \begin{column}{.1\textwidth}
@@ -84,23 +90,25 @@
         \hfill%
         \hspace{0.2cm}
         %
-        \begin{column}{.85\textwidth}
+        \begin{column}{.8\textwidth}
             \textbf{Temas de pesquisa acadêmica}
             \begin{itemize}
-                \item<1-> [+] PESQUISA DE BASE 
+                \item [+] \textbf{Pesquisa de base} 
                 \begin{itemize}
                     \item [$\star$] Computação quântica e suas nuances.
                     \item [$\star$] Teoria da informação quântica.
                     \item [$\star$] Sistemas ópticos fibrados e free-space.
                     \item [$\star$] Espionagem quântica.
                 \end{itemize}
-                \item<1-> [+] [EM APERFEIÇOAMENTO]
+                \pause
+                \item [+] \textbf{Pesquisa em aperfeiçoamento}
                 \begin{itemize}
                     \item [$\dagger$] Sistemas embarcados.
                     \item [$\dagger$] Arduino e raspberry Pi.
-                    \item [$\dagger$] Esp32, Esp8266 NodeMCU e microprocessadores.
+                    \item [$\dagger$] Esp32 e Esp8266 NodeMCU.
+                    \item [$\dagger$] Microcontroladores e processadores.
                     \item [$\dagger$] IoT - Internet das coisas.
-                    \item [$\dagger$] IA aplicada a informação quântica
+                    \item [$\dagger$] IA aplicada a informação quântica.
                 \end{itemize} 
             \end{itemize}
         \end{column}
@@ -108,8 +116,11 @@
 \end{frame}
 %%
 \section{Disciplinas}
+%
 \subsection{Disciplinas}
+%
 \begin{frame}{Disciplinas}
+    \transblindshorizontal
     \textbf{Disciplinas ministradas}
         \begin{itemize}
             \item [=] Física 1$^*$, 2 e 3. Eletricidade e Eletrotécnica$^*$;
@@ -125,27 +136,45 @@
 \end{frame}
 %
 \subsection{Informações}
+%
 \begin{frame}{Informações das disciplinas}
-    \begin{block}<1->{Grupos das disciplinas}
-        
+    \begin{block}{Grupos no WhatsApp}
+        \begin{itemize}
+            \item Movimento e dinâmica Manhã: \url{}
+            \item Movimento e dinâmica Noite: \url{}
+            \item Eletrotécnica: \url{}
+            \item Automação e controle: \url{}
+            \item Lógica matemática: \url{}
+        \end{itemize}        
     \end{block}
-    \vspace{0.2cm}
-    \begin{block}<2->{Google drive das disciplinas}
-        
+    %
+    \begin{block}{Pasta no drive}
+        \begin{itemize}
+            \item Movimento e dinâmica: \url{http://gg.gg/mov22}
+            \item Eletrotécnica: \url{http://gg.gg/eletrotecnica22}
+            \item Automação e controle: \url{http://gg.gg/automacao22}
+            \item Lógica matemática: \url{http://gg.gg/logimat22}
+        \end{itemize}
     \end{block}
 \end{frame}
 %
 \subsection{Contatos}
+%
 \begin{frame}{Contatos}
-    \begin{block}<1->{Info}
+    \vspace{0.5cm}
+    \begin{block}{Info}
         \begin{itemize}
             \item [$\star$] \textbf{E-mail profissional:} paulo.pinheiro@fapce.edu.br\\
             \item [$\star$] \textbf{E-mail pessoal:} paulovpp@gmail.com\\
-            \item [$\star$] \textbf{Linkedin:} https://linkedin.com/in/paulovpp\\
-            \item [$\star$] \textbf{GitHub:} https://github.com/paulovpp\\
+            \item [$\star$] \textbf{Linkedin:} \url{https://linkedin.com/in/paulovpp}\\
+            \item [$\star$] \textbf{GitHub:} \url{https://github.com/paulovpp}\\
             \item [$\star$] \textbf{WhatsApp:} +55 88 9 9723-6607
         \end{itemize}
     \end{block}
+    %
+    \centering
+    \includegraphics[height=3.5cm]{contato.png}
+    \vspace{0.5cm}
 \end{frame}
 
 % \begin{frame}

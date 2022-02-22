@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.6)  21 FEB 2022 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.6)  21 FEB 2022 21:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/apresentacao/pres.tex"
-(/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/apresentacao/pres.tex
+**"/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/movimento/mov1.tex"
+(/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/movimento/mov1.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01> (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2021/05/26 v3.63 A class for typesetting presentations
@@ -559,8 +559,8 @@ Package caption Info: Hyperref support is turned off
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count330
 \l__pdf_internal_box=\box75
-) (./pres.aux)
-\openout1 = `pres.aux'.
+) (./mov1.aux)
+\openout1 = `mov1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -647,9 +647,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
- (./pres.out) (./pres.out)
+ (./mov1.out) (./mov1.out)
 \@outlinefile=\write5
-\openout5 = `pres.out'.
+\openout5 = `mov1.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
@@ -719,7 +719,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./pres.nav)
+ (./mov1.nav)
 LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -732,100 +732,46 @@ LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inpu
  (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-<./imgs//UNIFAP.png, id=62, 625.8582pt x 199.17612pt>
+<./imgs//UNIFAP.png, id=41, 625.8582pt x 199.17612pt>
 File: ./imgs//UNIFAP.png Graphic file (type png)
 <use ./imgs//UNIFAP.png>
 Package pdftex.def Info: ./imgs//UNIFAP.png  used on input line 33.
 (pdftex.def)             Requested size: 71.51855pt x 22.76228pt.
  [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./imgs//UNIFAP.png>]
-<./imgs//face.png, id=105, 180.675pt x 252.945pt>
-File: ./imgs//face.png Graphic file (type png)
-<use ./imgs//face.png>
-Package pdftex.def Info: ./imgs//face.png  used on input line 77.
-(pdftex.def)             Requested size: 72.2687pt x 101.17621pt.
- [2
+ <./imgs//UNIFAP.png>] (./mov1.toc) [2
 
- <./imgs//face.png>]
-File: ./imgs//face.png Graphic file (type png)
-<use ./imgs//face.png>
-Package pdftex.def Info: ./imgs//face.png  used on input line 77.
-(pdftex.def)             Requested size: 72.2687pt x 101.17621pt.
- [3
+] [3
+
+] [4
 
 ]
-<./imgs//pesq.png, id=174, 481.8pt x 481.8pt>
-File: ./imgs//pesq.png Graphic file (type png)
-<use ./imgs//pesq.png>
-Package pdftex.def Info: ./imgs//pesq.png  used on input line 116.
-(pdftex.def)             Requested size: 96.35829pt x 96.35829pt.
-
-Overfull \hbox (65.62744pt too wide) in paragraph at lines 116--116
- [] 
- []
-
-[4
-
- <./imgs//pesq.png>]
-File: ./imgs//pesq.png Graphic file (type png)
-<use ./imgs//pesq.png>
-Package pdftex.def Info: ./imgs//pesq.png  used on input line 116.
-(pdftex.def)             Requested size: 96.35829pt x 96.35829pt.
-
-Overfull \hbox (65.62744pt too wide) in paragraph at lines 116--116
- [] 
- []
-
-[5
-
-] [6
-
-]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 159.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [7
-
-]
-<./imgs//contato.png, id=352, 481.8pt x 481.8pt>
-File: ./imgs//contato.png Graphic file (type png)
-<use ./imgs//contato.png>
-Package pdftex.def Info: ./imgs//contato.png  used on input line 178.
-(pdftex.def)             Requested size: 99.57831pt x 99.58464pt.
-
-Overfull \vbox (23.4138pt too high) detected at line 178
- []
-
-[8
-
- <./imgs//contato.png>]
 \tf@nav=\write6
-\openout6 = `pres.nav'.
+\openout6 = `mov1.nav'.
 
 \tf@toc=\write7
-\openout7 = `pres.toc'.
+\openout7 = `mov1.toc'.
 
 \tf@snm=\write8
-\openout8 = `pres.snm'.
+\openout8 = `mov1.snm'.
 
- (./pres.aux)
-Package rerunfilecheck Info: File `pres.out' has not changed.
-(rerunfilecheck)             Checksum: E941B93D543435B387032D1CA0E6AC7C;734.
+ (./mov1.aux)
+Package rerunfilecheck Info: File `mov1.out' has not changed.
+(rerunfilecheck)             Checksum: B7D588356D5D437798AD6AEE2FBF9EFC;212.
  ) 
 Here is how much of TeX's memory you used:
- 23316 strings out of 478536
- 435070 string characters out of 5850220
- 746665 words of memory out of 5000000
- 40736 multiletter control sequences out of 15000+600000
- 420613 words of font info for 73 fonts, out of 8000000 for 9000
+ 23176 strings out of 478536
+ 431941 string characters out of 5850220
+ 741726 words of memory out of 5000000
+ 40617 multiletter control sequences out of 15000+600000
+ 416311 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,124p,530b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on pres.pdf (8 pages, 1145679 bytes).
+ 128i,19n,124p,527b,811s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
+Output written on mov1.pdf (4 pages, 484131 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 25 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 11 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
