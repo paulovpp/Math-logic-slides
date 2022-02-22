@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.6)  21 FEB 2022 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.6)  22 FEB 2022 06:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/movimento/mov1.tex"
-(/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/movimento/mov1.tex
+**"/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/New Slides/movimento/mov1.tex"
+(/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/New Slides/movimento/mov1.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01> (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2021/05/26 v3.63 A class for typesetting presentations
@@ -535,51 +535,57 @@ Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
 (babel)             (\language70). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
-)) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count328
+\multirow@dima=\skip65
+\bigstrutjot=\dimen285
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen285
-\captionmargin@=\dimen286
-\captionwidth=\dimen287
-\caption@tempdima=\dimen288
-\caption@indent=\dimen289
-\caption@parindent=\dimen290
-\caption@hangindent=\dimen291
+\captionmargin=\dimen286
+\captionmargin@=\dimen287
+\captionwidth=\dimen288
+\caption@tempdima=\dimen289
+\caption@indent=\dimen290
+\caption@parindent=\dimen291
+\caption@hangindent=\dimen292
 Package caption Info: beamer document class detected.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-beamer.sto
 File: caption-beamer.sto 2020/08/22 v2.0 Adaption of the caption package to the beamer document classes (AR)
 ))
-\c@caption@flags=\count328
-\c@continuedfloat=\count329
+\c@caption@flags=\count329
+\c@continuedfloat=\count330
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemeshadow.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count330
+\l__color_backend_stack_int=\count331
 \l__pdf_internal_box=\box75
 ) (./mov1.aux)
 \openout1 = `mov1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -617,16 +623,16 @@ LaTeX Font Info:    ... okay on input line 29.
 
 (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
-\scratchdimen=\dimen292
+\scratchcounter=\count332
+\scratchdimen=\dimen293
 \scratchbox=\box76
-\nofMPsegments=\count332
-\nofMParguments=\count333
+\nofMPsegments=\count333
+\nofMParguments=\count334
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count334
-\MPscratchDim=\dimen293
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
+\MPscratchCnt=\count335
+\MPscratchDim=\dimen294
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
 \everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -634,7 +640,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 33.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -642,68 +648,68 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count337
+\c@section@level=\count338
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
  (./mov1.out) (./mov1.out)
 \@outlinefile=\write5
 \openout5 = `mov1.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 29.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 33.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 29.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 29.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 29.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 29.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 33.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 29.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 29.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 29.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 29.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 29.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 29.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 29.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 33.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 29.
+(Font)              `pureletters' in the math version `normal' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 29.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 33.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 29.
+(Font)              `pureletters' in the math version `bold' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 29.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 33.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 29.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 33.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -720,22 +726,22 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./mov1.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 37.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-<./imgs//UNIFAP.png, id=41, 625.8582pt x 199.17612pt>
+<./imgs//UNIFAP.png, id=62, 625.8582pt x 199.17612pt>
 File: ./imgs//UNIFAP.png Graphic file (type png)
 <use ./imgs//UNIFAP.png>
-Package pdftex.def Info: ./imgs//UNIFAP.png  used on input line 33.
+Package pdftex.def Info: ./imgs//UNIFAP.png  used on input line 37.
 (pdftex.def)             Requested size: 71.51855pt x 22.76228pt.
  [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -745,7 +751,156 @@ Package pdftex.def Info: ./imgs//UNIFAP.png  used on input line 33.
 
 ] [4
 
+] [5
+
+] [6
+
+] [7
+
+] [8
+
 ]
+<./imgs//qst18.59.png, id=345, 361.35pt x 191.71625pt>
+File: ./imgs//qst18.59.png Graphic file (type png)
+<use ./imgs//qst18.59.png>
+Package pdftex.def Info: ./imgs//qst18.59.png  used on input line 114.
+(pdftex.def)             Requested size: 289.0804pt x 153.3732pt.
+ [9
+
+ <./imgs//qst18.59.png>]
+<./imgs//qst19.24.png, id=378, 355.3275pt x 228.855pt>
+File: ./imgs//qst19.24.png Graphic file (type png)
+<use ./imgs//qst19.24.png>
+Package pdftex.def Info: ./imgs//qst19.24.png  used on input line 121.
+(pdftex.def)             Requested size: 213.19814pt x 137.31404pt.
+ [10
+
+ <./imgs//qst19.24.png>]
+<./imgs//qst19.51.png, id=409, 305.14pt x 266.9975pt>
+File: ./imgs//qst19.51.png Graphic file (type png)
+<use ./imgs//qst19.51.png>
+Package pdftex.def Info: ./imgs//qst19.51.png  used on input line 128.
+(pdftex.def)             Requested size: 183.0854pt x 160.19972pt.
+ [11
+
+ <./imgs//qst19.51.png>]
+<./imgs//qst20.14.png, id=440, 364.36125pt x 404.51125pt>
+File: ./imgs//qst20.14.png Graphic file (type png)
+<use ./imgs//qst20.14.png>
+Package pdftex.def Info: ./imgs//qst20.14.png  used on input line 135.
+(pdftex.def)             Requested size: 145.74191pt x 161.80162pt.
+ [12
+
+ <./imgs//qst20.14.png>]
+<./imgs//qst20.37.png, id=471, 354.32375pt x 292.09125pt>
+File: ./imgs//qst20.37.png Graphic file (type png)
+<use ./imgs//qst20.37.png>
+Package pdftex.def Info: ./imgs//qst20.37.png  used on input line 142.
+(pdftex.def)             Requested size: 212.59589pt x 175.25609pt.
+ [13
+
+ <./imgs//qst20.37.png>]
+<./imgs//qst20.55.png, id=504, 353.32pt x 191.71625pt>
+File: ./imgs//qst20.55.png Graphic file (type png)
+<use ./imgs//qst20.55.png>
+Package pdftex.def Info: ./imgs//qst20.55.png  used on input line 149.
+(pdftex.def)             Requested size: 282.65639pt x 153.3732pt.
+ [14
+
+ <./imgs//qst20.55.png>]
+<./imgs//qst21.23.png, id=535, 355.3275pt x 137.51375pt>
+File: ./imgs//qst21.23.png Graphic file (type png)
+<use ./imgs//qst21.23.png>
+Package pdftex.def Info: ./imgs//qst21.23.png  used on input line 156.
+(pdftex.def)             Requested size: 284.26237pt x 110.01114pt.
+ [15
+
+ <./imgs//qst21.23.png>]
+<./imgs//qst22.01.png, id=566, 363.3575pt x 393.47pt>
+File: ./imgs//qst22.01.png Graphic file (type png)
+<use ./imgs//qst22.01.png>
+Package pdftex.def Info: ./imgs//qst22.01.png  used on input line 163.
+(pdftex.def)             Requested size: 163.50935pt x 177.05986pt.
+ [16
+
+ <./imgs//qst22.01.png>]
+<./imgs//qst22.31.png, id=598, 349.305pt x 386.44376pt>
+File: ./imgs//qst22.31.png Graphic file (type png)
+<use ./imgs//qst22.31.png>
+Package pdftex.def Info: ./imgs//qst22.31.png  used on input line 170.
+(pdftex.def)             Requested size: 157.18579pt x 173.89807pt.
+ [17
+
+ <./imgs//qst22.31.png>]
+<./imgs//qst22.53.png, id=629, 351.3125pt x 97.36375pt>
+File: ./imgs//qst22.53.png Graphic file (type png)
+<use ./imgs//qst22.53.png>
+Package pdftex.def Info: ./imgs//qst22.53.png  used on input line 180.
+(pdftex.def)             Requested size: 281.05037pt x 77.89108pt.
+ [18
+
+ <./imgs//qst22.53.png>]
+<./imgs//qst23.10.png, id=660, 339.2675pt x 302.12875pt>
+File: ./imgs//qst23.10.png Graphic file (type png)
+<use ./imgs//qst23.10.png>
+Package pdftex.def Info: ./imgs//qst23.10.png  used on input line 199.
+(pdftex.def)             Requested size: 169.63333pt x 151.064pt.
+<./imgs//qst23.17.png, id=661, 353.32pt x 170.6375pt>
+File: ./imgs//qst23.17.png Graphic file (type png)
+<use ./imgs//qst23.17.png>
+Package pdftex.def Info: ./imgs//qst23.17.png  used on input line 199.
+(pdftex.def)             Requested size: 141.32549pt x 68.25378pt.
+ [19
+
+ <./imgs//qst23.10.png> <./imgs//qst23.17.png>]
+<./imgs//qst23.38.png, id=694, 355.3275pt x 347.2975pt>
+File: ./imgs//qst23.38.png Graphic file (type png)
+<use ./imgs//qst23.38.png>
+Package pdftex.def Info: ./imgs//qst23.38.png  used on input line 206.
+(pdftex.def)             Requested size: 159.89589pt x 156.28242pt.
+ [20
+
+ <./imgs//qst23.38.png>]
+<./imgs//qst23.54.png, id=726, 298.11375pt x 257.96375pt>
+File: ./imgs//qst23.54.png Graphic file (type png)
+<use ./imgs//qst23.54.png>
+Package pdftex.def Info: ./imgs//qst23.54.png  used on input line 213.
+(pdftex.def)             Requested size: 178.86963pt x 154.77943pt.
+ [21
+
+ <./imgs//qst23.54.png>]
+<./imgs//qst24.16.png, id=757, 348.30125pt x 143.53625pt>
+File: ./imgs//qst24.16.png Graphic file (type png)
+<use ./imgs//qst24.16.png>
+Package pdftex.def Info: ./imgs//qst24.16.png  used on input line 220.
+(pdftex.def)             Requested size: 278.64137pt x 114.82915pt.
+ [22
+
+ <./imgs//qst24.16.png>]
+<./imgs//qst24.38.png, id=788, 351.3125pt x 186.6975pt>
+File: ./imgs//qst24.38.png Graphic file (type png)
+<use ./imgs//qst24.38.png>
+Package pdftex.def Info: ./imgs//qst24.38.png  used on input line 227.
+(pdftex.def)             Requested size: 281.05037pt x 149.35818pt.
+ [23
+
+ <./imgs//qst24.38.png>]
+<./imgs//qst25.41.png, id=820, 356.33125pt x 164.615pt>
+File: ./imgs//qst25.41.png Graphic file (type png)
+<use ./imgs//qst25.41.png>
+Package pdftex.def Info: ./imgs//qst25.41.png  used on input line 234.
+(pdftex.def)             Requested size: 285.06537pt x 131.69217pt.
+ [24
+
+ <./imgs//qst25.41.png>]
+<./imgs//qst25.56.png, id=850, 355.3275pt x 144.54pt>
+File: ./imgs//qst25.56.png Graphic file (type png)
+<use ./imgs//qst25.56.png>
+Package pdftex.def Info: ./imgs//qst25.56.png  used on input line 241.
+(pdftex.def)             Requested size: 284.26237pt x 115.63214pt.
+ [25
+
+ <./imgs//qst25.56.png>]
 \tf@nav=\write6
 \openout6 = `mov1.nav'.
 
@@ -757,21 +912,21 @@ Package pdftex.def Info: ./imgs//UNIFAP.png  used on input line 33.
 
  (./mov1.aux)
 Package rerunfilecheck Info: File `mov1.out' has not changed.
-(rerunfilecheck)             Checksum: B7D588356D5D437798AD6AEE2FBF9EFC;212.
+(rerunfilecheck)             Checksum: 13E294C4DA868E8AEC28CE47E7C2A185;1222.
  ) 
 Here is how much of TeX's memory you used:
- 23176 strings out of 478536
- 431941 string characters out of 5850220
- 741726 words of memory out of 5000000
- 40617 multiletter control sequences out of 15000+600000
- 416311 words of font info for 61 fonts, out of 8000000 for 9000
+ 23537 strings out of 478536
+ 438621 string characters out of 5850220
+ 742335 words of memory out of 5000000
+ 40908 multiletter control sequences out of 15000+600000
+ 417072 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,124p,527b,811s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on mov1.pdf (4 pages, 484131 bytes).
+ 128i,19n,124p,520b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb>
+Output written on mov1.pdf (25 pages, 1205523 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 11 named destinations out of 1000 (max. 500000)
- 142 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 925 PDF objects out of 1000 (max. 8388607)
+ 810 compressed objects within 9 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
