@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[brazilian]{babel}
+\usepackage{xcolor}
 
 \usetheme{Warsaw}
 \usecolortheme{default}
@@ -21,8 +22,7 @@
     UNIFAP
 }
 %
-\date{Última atualização:\\ \today}
-\logo{\large \LaTeX{}}
+\date{\small{Acesse estes slides em:\\ \url{https://github.com/paulovpp/slides}}\newline \\Última atualização:\\ \today}
 \logo{\includegraphics[height=0.8cm]{imgs/UNIFAP.png}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -64,7 +64,7 @@
     \frametitle{Definições}
     \framesubtitle{Introductory definitions to start the course}
     \textbf{Proposição}\\
-    \quad $\star$ \textcolor{red}{É qualquer conjunto de palavras ou símbolos que expressam um pensamento completo.}\\
+    \quad $\star$ \textcolor{blue}{É qualquer conjunto de palavras ou símbolos que expressam um pensamento completo.}\\
     \quad $\star$ As proposições transmitem fatos ou exprimem juízos que formamos a respeito de determinado acontecimento.\\ \pause
     \textbf{Exemplos}
     \begin{itemize}
@@ -80,7 +80,7 @@
 \begin{frame}
     \frametitle{Definições}
     \framesubtitle{Introductory definitions to start the course}
-    \begin{block}{Alfabeto da lógica proposicional}
+    \begin{block}<1->{Alfabeto da lógica proposicional}
         \begin{itemize}
             \item Símbolo de pontuação: (,)
             \item Símbolos booleanos: \textit{true, false}
@@ -89,8 +89,55 @@
             \item Conectivos proposicionais: $\land,~\lor,~\lnot,~\rightarrow, ~\leftrightarrow$
         \end{itemize}
     \end{block}
+    %
+    \begin{block}<2->{Fórmulas}
+        \quad São conjuntos de proposições unidos por um conectivo obtendo um valor booleano como resultante. São construídas a partir dos símbolos do alfabeto proposicional.\\
+        \quad \textcolor{red}{Tal como ocorre nas linguagens faladas ou escritas, não é qualquer concatenação de símbolos que é uma fórmula.}
+    \end{block}
 \end{frame}
 %
+\begin{frame}
+    \frametitle{Definições}
+    \framesubtitle{Introductory definitions to start the course}
+    \begin{itemize}
+        \item <3-> Exemplo:
+    \end{itemize}
+
+\end{frame}
+%
+\subsection{Princípios}
+%
+\begin{frame}
+    \frametitle{Princípios da lógica clássica}
+    \framesubtitle{Basic principles compared to fundamental rules to mathematical logic}
+    %
+    \pause
+    \begin{block}{Princípio da identidade}
+        Uma proposição não pode ser verdadeira e falsa ao mesmo tempo. \\
+        $$P~\text{é igual a}~P$$
+    \end{block}
+    \pause
+    %
+    \begin{block}{Princípio da não contradição}
+        Uma proposição não pode ser \textit{verdadeira} e \textit{falsa} ao mesmo tempo.
+        $$ \text{não}~\left(P~\text{e não}~P\right) $$
+    \end{block}
+    \pause
+    %
+    \begin{block}{Princípio do terceiro excluído}
+        Toda proposição ou é verdadeira ou é falsa, não existindo um terceiro valor que ela possa assumir.
+        $$ P~\text{ou não}~P~(\otimes - \text{ou exclusivo})$$
+    \end{block}
+\end{frame}
+%
+\subsection{Tipos de proposições}
+%
+\begin{frame}
+    \frametitle{Proposição simples e compostas}
+    \framesubtitle{Simple ou compound preposition}
+\end{frame}
+
+%%%%
 \begin{frame}{Lists in Beamer}
 
 This is an unordered list:
