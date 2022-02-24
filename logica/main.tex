@@ -1,0 +1,127 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+
+\usetheme{Warsaw}
+\usecolortheme{default}
+\usefonttheme{professionalfonts}
+\graphicspath{{./imgs/}}
+\setbeamertemplate{caption}[numbered]
+\setbeamercovered{transparent}
+\geometry{left=1cm, right=1cm}
+
+\title{Lógica Matemática} 
+\author[Paulo Pinheiro]
+{Dr. Paulo Vinicius Pereira Pinheiro\inst{1}}
+\institute[UNIFAP]
+{
+    \inst{1}
+    Centro Universitário Paraíso do Ceará\\
+    UNIFAP
+}
+%
+\date{Última atualização:\\ \today}
+\logo{\large \LaTeX{}}
+\logo{\includegraphics[height=0.8cm]{imgs/UNIFAP.png}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+% Outline frame
+\begin{frame}{Sumário}
+    \tableofcontents
+\end{frame}
+%% -------------------------------- %% -----------------------------------%%
+%% Lists of frames
+\section{Introdução}
+\subsection{Conceitos fundamentais}
+%
+\subsubsection{Objetivos iniciais}
+%
+\begin{frame}
+    \frametitle{Objetivos iniciais}
+    \begin{alertblock}{Estudo da lógica proposicional}
+        \begin{itemize}
+            \item Representar e especificar os conceitos de sintaxe e semântica associados a qualquer lógica utilizada ou linguagem.
+            \item Estudar os métodos que produzem ou verifiquem as fórmulas ou argumentos utilizados.
+            \item Definir sistemas de dedução formal onde são consideradas as noções de prova e consequência lógica.
+            \item Correlacionar diagramas de Venn com a prática.
+            \item Conhecer a álgebra de Boole.
+        \end{itemize}
+    \end{alertblock}
+\end{frame}
+%
+\subsubsection{Definições}
+%
+\begin{frame}
+    \frametitle{Definições}
+    \framesubtitle{Introductory definitions to start the course}
+    \textbf{Proposição}\\
+    \quad $\star$ \textcolor{red}{É qualquer conjunto de palavras ou símbolos que expressam um pensamento completo.}\\
+    \quad $\star$ As proposições transmitem fatos ou exprimem juízos que formamos a respeito de determinado acontecimento.\\ \pause
+    \textbf{Exemplos}
+    \begin{itemize}
+        \item A lua é um satélite da Terra.\pause
+        \item O valor arredondado de $\pi$ vale $3,14$.\pause
+        \item Recife é a capital da Paraíba\pause
+        \item $\cos(90^o)~=~0$.\pause
+    \end{itemize}
+    \textbf{Alfabeto}\\
+    \quad $\star$ É o conjunto de símbolos usado em qualquer linguagem. A seguir a tabela de símbolos usados na disciplina é apresentado:
+\end{frame}
+%
+\begin{frame}
+    \frametitle{Definições}
+    \framesubtitle{Introductory definitions to start the course}
+    \begin{block}{Alfabeto da lógica proposicional}
+        \begin{itemize}
+            \item Símbolo de pontuação: (,)
+            \item Símbolos booleanos: \textit{true, false}
+            \item Símbolos proposicionais simples: $p,~q,~r,~s,~p_1,~q_2$
+            \item Símbolos proposicionais compostos: $P,~Q,~R,~S,~P_1,~Q_1,~S_2$
+            \item Conectivos proposicionais: $\land,~\lor,~\lnot,~\rightarrow, ~\leftrightarrow$
+        \end{itemize}
+    \end{block}
+\end{frame}
+%
+\begin{frame}{Lists in Beamer}
+
+This is an unordered list:
+\begin{itemize}
+    \item Item 1
+    \item Item 2
+    \item Item 3
+\end{itemize}
+
+and this is an ordered list:
+\begin{enumerate}
+    \item Item 1
+    \item Item 2
+    \item Item 3
+\end{enumerate}
+
+\end{frame}
+
+
+% Blocks frame
+\section{Blocks in Beamer}
+\begin{frame}{Blocks in Beamer}
+    \begin{block}{Standard Block}
+        This is a standard block.
+    \end{block}
+    \begin{alertblock}{Alert Message}
+        This block presents alert message.
+    \end{alertblock}
+    \begin{exampleblock}{An example of typesetting tool}
+        Example: MS Word, \LaTeX{}
+    \end{exampleblock}
+\end{frame} 
+
+\end{document}
