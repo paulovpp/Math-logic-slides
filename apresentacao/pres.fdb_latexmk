@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1645489119 "/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/apresentacao/pres.tex" "pres.pdf" "pres" 1645489123
-  "/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/apresentacao/pres.tex" 1645489114 6433 2bc8845dcdcb2e357597d190cc66ced6 ""
+["pdflatex"] 1645711881 "/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/New Slides/apresentacao/pres.tex" "pres.pdf" "pres" 1645712038
+  "/Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/New Slides/apresentacao/pres.tex" 1645712037 6875 92d0e81f8088a20624b9e08bc38444da ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecss0500.tfm" 1136768653 3584 3cb5b0e5e7e89823423413806ab1d938 ""
@@ -224,15 +224,15 @@
   "imgs//contato.png" 1645488460 111308 fe33b65efe752a92d21387e907cbfb82 ""
   "imgs//face.png" 1645469307 354245 275115bad68f7050d3c1bc04fa7e98a9 ""
   "imgs//pesq.png" 1645475500 99182 a81e73f60442da7d38f9cd6755632724 ""
-  "pres.aux" 1645489122 3696 794267ffdc70af567acb1b5debfa34e2 "pdflatex"
-  "pres.nav" 1645489122 1661 79270d3dea83e7e88b94bbd2ed3af913 "pdflatex"
-  "pres.out" 1645489122 734 e941b93d543435b387032d1ca0e6ac7c "pdflatex"
-  "pres.tex" 1645489114 6433 2bc8845dcdcb2e357597d190cc66ced6 ""
+  "pres.aux" 1645711885 3833 620859b6f19ae81c309c1e96b3f49f2f "pdflatex"
+  "pres.nav" 1645711885 1762 3b30ed93169954966fcaa0fa92b76c99 "pdflatex"
+  "pres.out" 1645711885 734 a47bf9c6ac6de34f72bb91a2c668c138 "pdflatex"
+  "pres.tex" 1645712037 6875 92d0e81f8088a20624b9e08bc38444da ""
   (generated)
-  "pres.toc"
-  "pres.aux"
   "pres.out"
-  "pres.snm"
   "pres.nav"
   "pres.log"
+  "pres.aux"
+  "pres.toc"
   "pres.pdf"
+  "pres.snm"

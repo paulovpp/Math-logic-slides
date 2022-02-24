@@ -1,8 +1,8 @@
-PWD /Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/apresentacao
+PWD /Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/New Slides/apresentacao
 INPUT /usr/local/texlive/2021/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/Math logic slides/apresentacao/pres.tex
+INPUT /Users/pvpp/OneDrive - FIUSA EDUCACIONAL S SIMPLES LTDA - EPP/New Slides/apresentacao/pres.tex
 OUTPUT pres.log
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1111,6 +1111,7 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-beamer.sto
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-beamer.sto
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-beamer.sto
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-beamer.sto
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemeWarsaw.sty

@@ -5,4 +5,4 @@
 \beamer@sectionintoc {2}{Disciplinas}{6}{0}{2}
 \beamer@subsectionintoc {2}{1}{Disciplinas}{6}{0}{2}
 \beamer@subsectionintoc {2}{2}{Informações}{7}{0}{2}
-\beamer@subsectionintoc {2}{3}{Contatos}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Contatos}{9}{0}{2}
