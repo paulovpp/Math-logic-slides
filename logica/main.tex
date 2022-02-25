@@ -3,6 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[brazilian]{babel}
 \usepackage{xcolor}
+\usepackage{fancybox}
 
 \usetheme{Warsaw}
 \usecolortheme{default}
@@ -10,9 +11,10 @@
 \graphicspath{{./imgs/}}
 \setbeamertemplate{caption}[numbered]
 \setbeamercovered{transparent}
-\geometry{left=1cm, right=1cm}
+\geometry{left=1cm, right=1cm, top=0.5cm, bottom=0.5cm}
 
-\title{Lógica Matemática} 
+\title{Lógica Matemática}
+\subtitle{Parte 1}
 \author[Paulo Pinheiro]
 {Dr. Paulo Vinicius Pereira Pinheiro\inst{1}}
 \institute[UNIFAP]
@@ -44,10 +46,15 @@
 %% Section 1 - Introductory concepts
 \section{Introdução}
 %
-%\subsection{Objetivos}
+% \begin{frame}[c]
+%     \begin{block}{\LARGE{Definições iniciais}}
+%     \end{block}
+% \end{frame}
+\subsection{Objetivos e definições iniciais}
 %
-\begin{frame}
+\begin{frame}[c]
     \frametitle{Objetivos iniciais}
+    \framesubtitle{List all course objectives}
     \begin{alertblock}{Estudo da lógica proposicional}
         \begin{itemize}
             \item Representar e especificar os conceitos de sintaxe e semântica associados a qualquer lógica utilizada ou linguagem.
@@ -59,9 +66,7 @@
     \end{alertblock}
 \end{frame}
 %
-\subsection{Definições iniciais}
-%
-\begin{frame}
+\begin{frame}[t]
     \frametitle{Definições}
     \framesubtitle{Introductory definitions to the course}
     \textbf{Proposição}\\
@@ -78,7 +83,7 @@
     \quad $\star$ É o conjunto de símbolos usado em qualquer linguagem. A seguir a tabela de símbolos usados na disciplina é apresentado:
 \end{frame}
 %
-\begin{frame}
+\begin{frame}[t]
     \frametitle{Definições iniciais}
     \framesubtitle{Introductory definitions to start the course}
     \begin{block}<1->{Alfabeto da lógica proposicional}
@@ -97,13 +102,23 @@
     \end{block}
 \end{frame}
 %
-\begin{frame}
+\begin{frame}[t]
     \frametitle{Algumas definições}
-    \framesubtitle{Introductory definitions to start the course}
-    \begin{itemize}
-        \item <3-> Exemplo:
-    \end{itemize}
-
+    \framesubtitle{Examples of logic formulas}
+        \begin{itemize}
+            \item Todo símbolo de verdade $(V)$ é uma fórmula.
+            \item Todo símbolo proposicional é uma fórmula.
+            \item Se $H$ é uma fórmula então $(\lnot H)$, a negação de $H$, é uma fórmula.
+            \item Se $H$ e $G$ são fórmulas então $(H \land G)$, $(H \lor G)$, $(H \rightarrow G)$ e $(H \leftrightarrow G)$ são fórmulas. 
+        \end{itemize}
+        \textbf{Não são fórmulas:}\\
+        \begin{itemize}
+            \item $PR$
+            \item $(H~true~\leftrightarrow)$
+            \item $(true~\rightarrow \leftrightarrow (H~true \rightarrow))$
+            \item $PH \rightarrow \land$
+            \item $true \rightarrow \lor$
+        \end{itemize}
 \end{frame}
 %
 \subsection{Princípios fundamentais da lógica matemática}
@@ -112,10 +127,9 @@
     \frametitle{Princípios da lógica clássica}
     %\framesubtitle{Basic principles compared to fundamental rules to mathematical logic}
     %
-    \pause
     \begin{block}{Princípio da identidade}
         Uma proposição não pode ser verdadeira e falsa ao mesmo tempo. \\
-        $$P~\text{é igual a}~P$$
+        \center{$P~\text{é igual a}~P$}
     \end{block}
     \pause
     %
@@ -155,7 +169,7 @@
 \begin{frame}
     \frametitle{Conectivos do cálculo proposicional}
     \framesubtitle{Conectors for all arithmetic with propositions.}
-    Na linguagem comum, usam-se palavras explícitas ou não para interligar frases dotadas de algum sentido.Tais palavras são substituídas, na Lógica Matemática, por símbolos denominados conectivos lógicos.
+    Na linguagem comum, palavras explícitas são utilizadas ou não para interligar frases dotadas de algum sentido. Tais palavras são substituídas, na \textbf{Lógica Matemática}, por símbolos denominados conectivos lógicos.
 \end{frame}
 \begin{frame}{Lists in Beamer}
 
