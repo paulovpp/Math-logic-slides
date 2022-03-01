@@ -1,17 +1,21 @@
 \documentclass[10pt]{beamer}
+% ==> \documentclass[10pt, handout]{beamer}    to print 4 in one page
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 \usepackage[brazilian]{babel}
 \usepackage{xcolor}
 \usepackage{fancybox}
+\usepackage{pgfpages}
+% ==> \pgfpagesuselayout{4 on 1}[]      to print 4 in one page
 
 \usetheme{Warsaw}
 \usecolortheme{default}
 \usefonttheme{professionalfonts}
 \graphicspath{{./imgs/}}
 \setbeamertemplate{caption}[numbered]
+\setbeamertemplate{footline}[frame number]
 \setbeamercovered{transparent}
-\geometry{left=1cm, right=1cm, top=0.5cm, bottom=0.5cm}
+%\geometry{left=1cm, right=1cm, top=0.5cm, bottom=0.5cm}
 
 \title{Lógica Matemática}
 \subtitle{Parte 1}
@@ -171,7 +175,7 @@
 %
 \subsection{Conectivos proposicionais}
 %
-\begin{frame}
+\begin{frame}[t]
     \frametitle{Conectivos do cálculo proposicional}
     \framesubtitle{Conectors for all arithmetic with propositions.}
     Na linguagem comum, palavras explícitas são utilizadas ou não para interligar frases dotadas de algum sentido. Tais palavras são substituídas, na \textbf{Lógica Matemática}, por símbolos denominados conectivos lógicos.
