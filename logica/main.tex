@@ -1,7 +1,7 @@
 \documentclass[10pt]{beamer}
 % ==> \documentclass[10pt, handout]{beamer}    to print 4 in one page
 \usepackage[utf8]{inputenc}
-%\usepackage[T1]{fontenc}
+\usepackage{amsmath}
 \usepackage[brazilian]{babel}
 \usepackage{xcolor}
 \usepackage{fancybox}
@@ -178,26 +178,104 @@
 \begin{frame}[t]
     \frametitle{Conectivos do cálculo proposicional}
     \framesubtitle{Conectors for all arithmetic with propositions.}
-    Na linguagem comum, palavras explícitas são utilizadas ou não para interligar frases dotadas de algum sentido. Tais palavras são substituídas, na \textbf{Lógica Matemática}, por símbolos denominados conectivos lógicos.
+    Na linguagem comum, palavras explícitas são utilizadas ou não para interligar frases dotadas de algum sentido. Tais palavras são substituídas, na \textbf{Lógica Matemática}, por símbolos denominados \textit{conectivos lógicos}.\\
+    \hfill \break
+    Em nosso estudo, nos restringiremos inicialmente ao chamado \textbf{cálculo proposicional}. Por essa razão, os conectivos utilizados são conhecidos por \textit{sentenciais} ou \textit{proposicionais.}\\
+    \hfill \break
+    Existem cinco conectivos que substituirão simbolicamente as expressões:
+    \begin{itemize}
+        \item \textit{e}$~(\land)$ - do inglês \textit{AND}
+        \item \textit{ou}$~(\lor)$ - do inglês \textit{OR}
+        \item \textit{se ..., então ...}$(\rightarrow)$ - do inglês \textit{IF ... then ...}
+        \item \textit{se, e somente se ...}$(\leftrightarrow)$ - do inglês \textit{IF  and ONLY IF ...}
+        \item \textit{não}$~(\lnot)$ - do inglês \textit{NOT}
+    \end{itemize}
 \end{frame}
-\begin{frame}{Lists in Beamer}
-
-This is an unordered list:
-\begin{itemize}
-    \item Item 1
-    \item Item 2
-    \item Item 3
-\end{itemize}
-
-and this is an ordered list:
-\begin{enumerate}
-    \item Item 1
-    \item Item 2
-    \item Item 3
-\end{enumerate}
-
+%
+\begin{frame}[t]
+    \small
+    \frametitle{Conectivos do cálculo proposicional}
+    \framesubtitle{Examples}
+    %
+    \begin{exampleblock}{Exemplo 1}
+        \textbf{Somos pobres mortais e fanáticos torcedores da vida.}\\[2pt]
+        É uma proposição composta:\\[2pt]
+        \textbf{1a proposição:} somos pobres mortais, \\[2pt]
+        \textbf{2a proposição:} somos fanáticos torcedores da vida, \\[2pt]
+        \textbf{Conectivo:} e (\textit{AND})
+    \end{exampleblock}
+    %
+    \begin{exampleblock}{Exemplo 2}
+        \textbf{Se não nos alimentarmos, morremos.}\\[2pt]
+        É uma proposição composta:\\[2pt]
+        \textbf{1a proposição:} nos alimentarmos, \\[2pt]
+        \textbf{2a proposição:} (nós) morreremos, \\[2pt]
+        \textbf{Conectivo:} Se ..., então ...
+    \end{exampleblock}
 \end{frame}
-%%
+%
+\begin{frame}[t]
+    \frametitle{Definições finais}
+    \framesubtitle{Final considerations of the section 1/2}
+    \small
+    \begin{block}{Ordem de precedência}
+        \begin{itemize}
+            \item Maior precedência: $\lnot$ ou $\sim$ 
+            \item Precedência intermediária: $\rightarrow$ e $\leftrightarrow$
+            \item Menor precedência: $\land$ e $\lor$
+        \end{itemize}        
+    \end{block}
+    \pause
+    \begin{block}{Comprimento de uma fórmula}
+        \begin{itemize}
+            \item Se $H$ é um símbolo proposicional ou de verdade então $comp[H]=1$
+            \item Se $H$ e $G$ são fórmulas da \textbf{lógica proposicional}, então
+        \end{itemize}
+        %\vspace{-3mm} % if negative it removes vertical space
+        \begin{gather*}
+            comp[\lnot H] = comp[H] + 1 \\
+            comp[H \land G]~\text{ ou }~comp[H \lor G] = comp[H] + comp[G] + 1 \\
+            comp[H \rightarrow G]~\text{ ou }~comp[H \leftrightarrow G] = comp[H] + comp[G] + 1
+        \end{gather*}
+        % gather environment: align equations on center
+    \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Definições finais}
+    \framesubtitle{Final considerations of the section 2/2}
+    \small
+    \begin{block}{Valor lógico}
+        O \textbf{valor lógico} de uma proposição simples ou composta expressa seu valor resultante se \textit{verdadeiro} ou \textit{falso}.
+        \begin{itemize}
+            \item Para uma proposição simples $p$, $V(p)$ expressa seu valor lógico.
+            \item Para uma proposição composta $H$, $V(H)$ expressa seu valor lógico.
+        \end{itemize}
+    \end{block}
+        %
+    \begin{columns}[T]
+        \begin{column}{.5\textwidth}
+            \begin{exampleblock}{Exemplo 1}
+                \quad $p$ : O sol é verde. \\
+                \quad $q$ : O sol é quente. \\
+                \quad $r$ : O mar não é vermelho.\\[4pt]
+                \quad $V(p) = V$, $V(q) = F$, $V(\lnot r)=F$ \\
+                \quad $V(p \land q) = F$, \quad $V(q \lor r) = V$
+            \end{exampleblock}
+        \end{column}
+        %
+        %\hspace{5mm}
+        \begin{column}{.5\textwidth}
+            \begin{exampleblock}{Exemplo 2}
+                \quad $p_1$ : $x \geq 10$   \\
+                \quad $p_2$ : $x < 50$\\
+                \quad $p_3$ : $x > 25$ \\[4pt]
+                $V(p_1) = V$, $V(p_2) = F$, $V(\lnot p_3)=F$ \\
+                \quad $V(p_1 \land p_2) = V$, $V(p_3 \land p_2) = F$
+            \end{exampleblock}
+        \end{column}
+    \end{columns}
+\end{frame}
 %
 %%% -------------------------------- %% -----------------------------------%%
 % Section 2 - Fundamental operations under logic propositions
@@ -228,6 +306,24 @@ and this is an ordered list:
     \begin{exampleblock}{An example of typesetting tool}
         Example: MS Word, \LaTeX{}
     \end{exampleblock}
-\end{frame} 
+\end{frame}
+%
+\begin{frame}{Lists in Beamer}
+
+    This is an unordered list:
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{itemize}
+    
+    and this is an ordered list:
+    \begin{enumerate}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{enumerate}
+    
+    \end{frame}
 
 \end{document}
