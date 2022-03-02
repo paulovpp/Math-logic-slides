@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[10pt, headsepline, captions=tableabove]{beamer}
 % ==> \documentclass[10pt, handout]{beamer}    to print 4 in one page
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -29,23 +29,30 @@
 }
 %
 \date{\small{Acesse estes slides em:\\ \url{https://github.com/paulovpp/slides}}\newline \\Última atualização:\\ \today}
-\logo{\includegraphics[height=0.8cm]{imgs/UNIFAP.png}}
+\logo{\includegraphics[height=0.7cm]{imgs/UNIFAP.png}}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \begin{document}
+% \setcounter{tocdepth}{1} % Show sections
+% \setcounter{tocdepth}{2} % + subsections
 % Title page frame
 \begin{frame}
-    \titlepage 
+    \titlepage
 \end{frame}
 
 % Remove logo from the next slides
 \logo{}
 
 % Outline frame
-\begin{frame}{Sumário}
-    \tableofcontents
+\begin{frame}[t]{Sumário}
+    \tableofcontents[sections={1-3}]
 \end{frame}
+%
+\begin{frame}[t]{Sumário}
+    \tableofcontents[sections={4-}]
+\end{frame}
+
 %% -------------------------------- %% -----------------------------------%%
 %% Section 1 - Introductory concepts
 \section{Introdução}
@@ -54,10 +61,10 @@
 %     \begin{block}{\LARGE{Definições iniciais}}
 %     \end{block}
 % \end{frame}
-\subsection{Objetivos e definições iniciais}
+\subsection{Objetivos}
 %
 \begin{frame}[c]
-    \frametitle{Objetivos iniciais}
+    \frametitle{Objetivos do curso}
     \framesubtitle{List all course objectives}
     \begin{alertblock}{Estudo da lógica proposicional}
         \begin{itemize}
@@ -70,8 +77,10 @@
     \end{alertblock}
 \end{frame}
 %
+\subsection{Definições iniciais}
+%
 \begin{frame}[t]
-    \frametitle{Definições}
+    \frametitle{Definições iniciais}
     \framesubtitle{Introductory definitions to the course}
     \textbf{Proposição}\\
     \quad $\star$ \textcolor{blue}{É qualquer conjunto de palavras ou símbolos que expressam um pensamento completo.}\\
@@ -87,8 +96,14 @@
     \quad $\star$ É o conjunto de símbolos usado em qualquer linguagem. A seguir a tabela de símbolos usados na disciplina é apresentado:
 \end{frame}
 %
+%% -------------------------------- %% -----------------------------------%%
+%% Section 2 - Lógica proposicional - Início 
+\section{Lógica proposicional - Início}
+%
+\subsection{Conceitos iniciais}
+%
 \begin{frame}[t]
-    \frametitle{Definições iniciais}
+    \frametitle{Conceitos iniciais}
     \framesubtitle{Introductory definitions to start the course}
     \begin{block}<1->{Alfabeto da lógica proposicional}
         \begin{itemize}
@@ -214,9 +229,22 @@
     \end{exampleblock}
 \end{frame}
 %
+%% -------------------------------- %% -----------------------------------%%
+%% Section 3 - Lógica proposicional - cálculo proposicional
+\section{Lógica proposicional - cálculo proposicional}
+%
+\subsection{Tabela verdade}
+%
 \begin{frame}[t]
-    \frametitle{Definições finais}
-    \framesubtitle{Final considerations of the section 1/2}
+    \frametitle{Tabela verdade}
+    \framesubtitle{True table of conectors definitions}
+\end{frame}
+%
+\subsection{Ordem de precedência e comprimento de fórmulas}
+%
+\begin{frame}[t]
+    \frametitle{Definições complementares}
+    \framesubtitle{Final considerations of the section - Procedence order}
     \small
     \begin{block}{Ordem de precedência}
         \begin{itemize}
@@ -240,6 +268,8 @@
         % gather environment: align equations on center
     \end{block}
 \end{frame}
+%
+\subsection{Valor lógico}
 %
 \begin{frame}[t]
     \frametitle{Definições finais}
@@ -277,9 +307,23 @@
     \end{columns}
 \end{frame}
 %
+\subsection{Exercícios}
+%
+\begin{frame}[t]
+    \frametitle{Exercícios - 1/}
+    \framesubtitle{Practice the chapters concepts}
+\end{frame}
+%
 %%% -------------------------------- %% -----------------------------------%%
-% Section 2 - Fundamental operations under logic propositions
+% Section 4 - Fundamental operations under logic propositions
+%
 \section{Operações lógicas com proposições}
+%
+\begin{frame}[t]
+    \frametitle{Operações lógicas}
+    \framesubtitle{Logical operation with propositions}
+    
+\end{frame}
 %
 \subsection{Conjunção}
 %
