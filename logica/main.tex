@@ -1,4 +1,4 @@
-\documentclass[10pt, headsepline, captions=tableabove,xcolor=table]{beamer}
+\documentclass[10pt, headsepline, captions=tableabove, xcolor=table]{beamer}
 % ==> \documentclass[10pt, handout]{beamer}    to print 4 in one page
 \usepackage[utf8]{inputenc}
 % \usepackage{multicol}
@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{fancybox}
 \usepackage{pgfpages}
+\usepackage{pifont}
 %\usepackage{enumitem}
 % ==> \pgfpagesuselayout{4 on 1}[]      to print 4 in one page
 
@@ -35,6 +36,7 @@
 \date{\small{Acesse estes slides em:\\ \url{https://github.com/paulovpp/slides}}\newline \\Última atualização:\\ \today}
 \logo{\includegraphics[height=0.7cm]{imgs/UNIFAP.png}}
 %
+% \input{header.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 \begin{document}
@@ -102,7 +104,7 @@
 %
 %% -------------------------------- %% -----------------------------------%%
 %% Section 2 - Lógica proposicional - Início 
-\section{Lógica proposicional - Início}
+\section{Lógica proposicional - início}
 %
 \subsection{Conceitos iniciais}
 %
@@ -699,28 +701,120 @@
     \end{block}
     %
     \vspace{-2mm}
+    \pause
     %
     \begin{block}{}
         Na proposição $H$ existe a indicação de duas proposições:
         \begin{itemize}
-            \item $p:$ Antonio é cearense.
-            \item $q:$ Antonio é pernambucano.
+            \item[] $p:$ Antonio é cearense.
+            \item[] $q:$ Antonio é pernambucano.
         \end{itemize}
         Nota-se pelo contexto que \textbf{APENAS} uma das proposições pode ser verdadeira, tornando assim o resultado \textbf{mutualmente excludente}.
     \end{block}
     %
     \vspace{-2mm}
+    \pause
     %
     \begin{block}{}
-        Para as proposições compostas $H(p,q)$ e $G(r,s)$, têm-se que:
+        Para a proposição compostas $H(p,q)$ têm-se que:
         \begin{itemize}
             \item $H(p,q) = p \veebar q$
-            \item $G(r,s) = r \lor s$
         \end{itemize}
     \end{block}
 \end{frame}
-
+%
+\begin{frame}[t]
+    \frametitle{Disjunção exclusiva ($\veebar$ - 'ou exclusivo' lógico)}
+    \framesubtitle{Logical XOR operator}
+    %
+    \vspace{-2mm}
+    \begin{block}{Comparativo}
+        Já para a proposição $G(r,s) \longrightarrow G(r,s) = r \lor s $:
+        \begin{itemize}
+            \item[] $r:$ José é eletricista.
+            \item[] $s:$ José é encanador.
+        \end{itemize}
+        Percebe-se então que no caso da proposição $G$, as duas proposições simples $r$ e $s$ não são \textbf{mutualmente excludentes}. Ou seja, ambas podem ter seus \textbf{valores lógicos} iguais a VERDADEIRO. \\[2pt]
+    \end{block}
+    %
+    \vspace{-5mm}
+    %
+    \begin{table}[ht]
+        \caption{Tabela verdade $(\veebar)$.}
+        \label{tab:tabela-xor}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \rowcolor[HTML]{EFEFEF} 
+        \textbf{p} & \textbf{q} & \textbf{p $\veebar$ q} \\ \hline
+        $V$        & $V$        & $F$                    \\ \hline
+        $V$        & $F$        & $V$                    \\ \hline
+        $F$        & $V$        & $V$                    \\ \hline
+        $F$        & $F$        & $F$                    \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+%
+%%% -------------------------------- %% -----------------------------------%%
+% Section 5 - Logical operations with conditions
+%
+\section{Operações lógicas condicionais}
+%
 \subsection{Condicional}
+%
+\begin{frame}[t]
+    \frametitle{Operador condicional $(\rightarrow)$ }
+    \framesubtitle{Conditional operator}
+    %
+    \vspace{-2mm}
+    \begin{block}{Definição}
+        Duas proposições formam uma condicional quando for possível colocá-las na seguinte forma: \\[2pt]
+        \begin{center}
+            \textit{Se (proposição 1), então (proposição 2)}
+        \end{center}
+        \begin{itemize}
+            \item a proposição 1 é chamada de \textbf{antecedente}, e a proposição 2 de \textbf{consequente};
+            \item o símbolo utilizado para ligar as duas proposições de uma condicional é o $(\rightarrow)$;
+            \item sua representação é da forma $p \rightarrow q$ e lê-se $p$ então $q$.
+            \item a equação acima também pode ser compreendida da forma:
+            \begin{itemize}
+                \item[\ding{114}] $p$ é condição suficiente para $q$
+                \item[\ding{114}] $q$ é condição necessária para $p$
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Operador condicional $(\rightarrow)$ }
+    \framesubtitle{Conditional operator}
+    %
+    \begin{block}{Continuação \dots}
+        \begin{itemize}
+            \item as proposições condicionais podem ter sentidos diferentes em sua composição, veja os exemplos a seguir.
+            \begin{itemize}
+                \item[] $p:$ Alberto é poliglota.
+                \item[] $q:$ Alberto(ele) fala várias línguas.
+            \end{itemize}
+            \item Simbolicamente temos $p \rightarrow q$ e lê-se: "Se Alberto é poliglota, ele fala várias línguas.
+        \end{itemize}
+    \end{block}
+    %
+    \vspace{-5mm}
+    %
+    \begin{table}[ht]
+        \caption{Tabela verdade $(\veebar)$.}
+        \label{tab:tabela-condicao}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \rowcolor[HTML]{EFEFEF} 
+        \textbf{p} & \textbf{q} & \textbf{p $\rightarrow$ q} \\ \hline
+        $V$        & $V$        & $V$                        \\ \hline
+        $V$        & $F$        & $F$                        \\ \hline
+        $F$        & $V$        & $V$                        \\ \hline
+        $F$        & $F$        & $V$                        \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
 %
 \subsection{Bicondicional}
 %
