@@ -17,6 +17,7 @@
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{footline}[frame number]
 \setbeamercovered{transparent}
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection} % TOC style
 %\setbeamercovered{invisible}
 %\geometry{left=1cm, right=1cm, top=0.5cm, bottom=0.5cm}
 
@@ -240,15 +241,13 @@
 %
 \begin{frame}[t]
     \frametitle{Tabela verdade}
-    \framesubtitle{True table of conectors definitions}
+    \framesubtitle{True table of operators}
     %
     \begin{alertblock}{Definição}
         \small
-        Segundo o princípio do \textbf{terceiro excluído}, toda proposição simples $p$ ou composta $H(p,q,...)$ só pode assumir \textbf{valor lógico} igual a \\
-        \begin{itemize}
-            \item $V$ (verdade - \textit{TRUE})
-            \item $F$ (falsidade - \textit{FALSE})
-        \end{itemize}
+        Segundo o princípio do \textbf{terceiro excluído}, toda proposição simples $p$ ou composta $H(p,q,...)$ só pode assumir \textbf{valor lógico} igual a \\ [1pt]
+        \center{$V$ (verdade - \textit{TRUE}) \qquad ou \qquad  $F$ (falsidade - \textit{FALSE})} \\ [4pt]
+        A \textbf{tabela-verdade} sintetiza o resultado de funções lógicas para $n$ proposições.
     \end{alertblock}
     %
     \vspace{-4mm}
@@ -512,23 +511,30 @@
         Este conectivo não liga duas proposições, mas simplesmente nega a afirmação da proposição que o precede. Em virtude disso, é um conectivo unário, enquanto os anteriores são conectivos binários, pois ligam duas proposições.
     \end{block}
     %
-    \pause
+    \vspace{-4mm}
     %
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{exampleblock}{Exemplo}
-                Este conectivo não liga duas proposições, mas simplesmente nega a afirmação da proposição que o precede. Em virtude disso, é um conectivo unário, enquanto os anteriores são conectivos binários, pois ligam duas proposições.
+    \begin{columns}[t]
+        \begin{column}{0.6\textwidth}
+            \begin{exampleblock}{Exemplos}
+                Se $V(p) = V$, $\lnot p = F$ \\ [2pt]
+                $V(\lnot p) = \lnot V(p)$ \\ [2pt]
+                $p:~2+3=5\quad (V)$ e $\lnot p:~2+3 \neq 5\quad (F)$ \\ [2pt]
+                $q:~23 < 10 \quad (F)$ e $\lnot q:~23 \nless 10 \quad (V)$ \\[2pt]
+                $q:$ Carlos é mecânico. \\[2pt]
+                $\lnot q:$ Carlos NÃO é mecânico.
             \end{exampleblock}
         \end{column}
         %
-        \begin{column}{0.5\textwidth}
-            \begin{table}[]
-                \caption{Tabela verdade de NOT.}
+        \hspace{-3mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \begin{table}[t]
+                \caption{Tabela verdade $(\lnot)$.}
                 \label{tab:tabela-not}
                 \begin{tabular}{|c|c|}
                 \hline
                 \rowcolor[HTML]{EFEFEF} 
-                \textbf{p} & \textbf{$\sim$p} \\ \hline
+                \textbf{$~$p} & \textbf{$\sim$p} \\ \hline
                 V          & F                \\ \hline
                 F          & V                \\ \hline
                 \end{tabular}
@@ -539,12 +545,89 @@
 %
 \subsection{Conjunção}
 %
-\begin{frame}
+
+\begin{frame}[t]
     \frametitle{Operação de conjunção ($\land$ - 'e' lógico)}
-    \framesubtitle{Logical AND operation with propositions}
+    \framesubtitle{Logical AND operation}
+    % 
+    \begin{block}{Definição}
+        É o resultado da combinação de duas proposições ligadas pela palavra \textbf{e}, que será substituída pelo símbolo $(\land)$. Seu \textbf{valor lógico} somente será VERDADEIRO quando \emph{TODAS} as proposições tiverem seus \textbf{valores lógicos} iguais a VERDADE.
+    \end{block}
+    \vspace{-4mm}
+    %
+    \begin{columns}[t]
+        \begin{column}{0.6\textwidth}
+            \begin{exampleblock}{Exemplos}
+                Se $V(p) = V$, $\lnot p = F$ \\ [2pt]
+                $V(\lnot p) = \lnot V(p)$ \\ [2pt]
+                $p:~2+3=5\quad (V)$ e $\lnot p:~2+3 \neq 5\quad (F)$ \\ [2pt]
+                $q:~23 < 10 \quad (F)$ e $\lnot q:~23 \nless 10 \quad (V)$ \\[2pt]
+                $q:$ Carlos é mecânico. \\[2pt]
+                $\lnot q:$ Carlos NÃO é mecânico.
+            \end{exampleblock}
+        \end{column}
+        %
+        \hspace{-3mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \begin{table}[]
+                \caption{Tabela verdade $(\land)$.}
+                \label{tab:table-and}
+                \begin{tabular}{|c|c|c|}
+                \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \textbf{p} & \textbf{q} & \textbf{$p \land q$} \\ \hline
+                $V$          & $V$          & $V$                    \\ \hline
+                $V$          & $F$          & $F$                    \\ \hline
+                $F$          & $V$          & $F$                   \\ \hline
+                $F$          & $F$          & $F$                    \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+    \end{columns}
 \end{frame}
 %
 \subsection{Disjunção}
+%
+\begin{frame}[t]
+    \frametitle{Operação de disjunção ($\lor$ - 'ou' lógico)}
+    \framesubtitle{Logical OR operator}
+    %
+    \begin{block}{Definição}
+        Este conectivo não liga duas proposições, mas simplesmente nega a afirmação da proposição que o precede. Em virtude disso, é um conectivo unário, enquanto os anteriores são conectivos binários, pois ligam duas proposições.
+    \end{block}
+    %
+    \vspace{-4mm}
+    %
+    \begin{columns}[t]
+        \begin{column}{0.6\textwidth}
+            \begin{exampleblock}{Exemplos}
+                Se $V(p) = V$, $\lnot p = F$ \\ [2pt]
+                $V(\lnot p) = \lnot V(p)$ \\ [2pt]
+                $p:~2+3=5\quad (V)$ e $\lnot p:~2+3 \neq 5\quad (F)$ \\ [2pt]
+                $q:~23 < 10 \quad (F)$ e $\lnot q:~23 \nless 10 \quad (V)$ \\[2pt]
+                $q:$ Carlos é mecânico. \\[2pt]
+                $\lnot q:$ Carlos NÃO é mecânico.
+            \end{exampleblock}
+        \end{column}
+        %
+        \hspace{-3mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \begin{table}[t]
+                \caption{Tabela verdade $(\lnot)$.}
+                \label{tab:tabela-ou}
+                \begin{tabular}{|c|c|}
+                \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \textbf{$~$p} & \textbf{$\sim$p} \\ \hline
+                V          & F                \\ \hline
+                F          & V                \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+    \end{columns}
+\end{frame}
 %
 \subsection{Condicional}
 %

@@ -28,3 +28,16 @@
 * Proposições simples e compostas
 * Conectivos proposicionais
 * Tabela verdade
+
+Modelos TEX:
+
+Change the TOC style with colors:
+
+```tex
+\setbeamertemplate{section in toc}{%
+  {\color{orange!70!black}\inserttocsectionnumber.}~\inserttocsection}
+\setbeamercolor{subsection in toc}{bg=white,fg=structure}
+\setbeamertemplate{subsection in toc}{%
+  \hspace{1.2em}{\color{orange}\rule[0.3ex]{3pt}{3pt}}~\inserttocsubsection\par}
+
+```
