@@ -18,7 +18,9 @@
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{footline}[frame number]
 \setbeamercovered{transparent}
-\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection} % TOC style
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection} 
+% \setbeamertemplate{navigation symbols}{} % remove navigation panel
+% TOC style
 %\setbeamercovered{invisible}
 %\geometry{left=1cm, right=1cm, top=0.5cm, bottom=0.5cm}
 
@@ -802,7 +804,7 @@
     \vspace{-5mm}
     %
     \begin{table}[ht]
-        \caption{Tabela verdade $(\veebar)$.}
+        \caption{Tabela verdade $(\rightarrow)$.}
         \label{tab:tabela-condicao}
         \begin{tabular}{|c|c|c|}
         \hline
@@ -816,6 +818,94 @@
     \end{table}
 \end{frame}
 %
+\begin{frame}[t]
+    \frametitle{Operador condicional $(\rightarrow)$ }
+    \framesubtitle{Examples}
+    %
+    \small
+    \begin{exampleblock}{Exemplos}
+        \begin{itemize}
+            \item[] $p:$ Santos Dumont é cearense.
+            \item[] $q:$ Fevereiro tem 31 dias.
+        \end{itemize}
+        $p \rightarrow q:$ Se Santos Dumont é cearense, então Fevereiro tem 31 dias. $(V)$ \\[2pt]
+        $V(p \rightarrow q) = V(p) \rightarrow V(q) = F \rightarrow F = V$
+    \end{exampleblock}
+    %
+    \vspace{-2mm}
+    %
+    \begin{exampleblock}{}
+        \begin{itemize}
+            \item[] $r:$ Maio tem 31 dias.
+            \item[] $s:$ A terra é plana. 
+        \end{itemize}
+        $r \rightarrow s:$ Se Santos Dumont é cearense, então Fevereiro tem 31 dias. $(F)$ \\[2pt]
+        $V(r \rightarrow r) = V(r) \rightarrow V(s) = V \rightarrow F = F$
+    \end{exampleblock}
+    %
+    \vspace{-2mm}
+    %
+    \begin{alertblock}{}
+        \textbf{NOTA:} uma função condicional $p \rightarrow q$ \textbf{não afirma} que o consequente $q$ se deduz ou é \textbf{consequência} do antecedente $p$.
+    \end{alertblock}
+\end{frame}
+%
 \subsection{Bicondicional}
+%
+\begin{frame}[t]
+    \frametitle{Operador bicondicional $(\leftrightarrow)$ }
+    \framesubtitle{Biconditional operator}
+    %
+    \begin{block}{Definição}
+        Duas proposições formam uma bicondicional quando for possível colocá-las na seguinte forma: \\[2pt]
+        \begin{center}
+            \textit{(proposição 1) se, e somente se, (proposição 2)}
+        \end{center}
+        \begin{itemize}
+            \item a proposição 1 é chamada de \textbf{antecedente}, e a proposição 2 de \textbf{consequente};
+            \item o símbolo utilizado para ligar as duas proposições de uma bicondicional é o $(\leftrightarrow)$;
+            \item sua representação é da forma $p \leftrightarrow q$ e lê-se $p$ se, e somente se, $q$.
+            \item a equação acima também pode ser compreendida da forma:
+            \begin{itemize}
+                \item[\ding{114}] Se $p$, então $q$. $(p \rightarrow q)$
+                \item[\ding{114}] Se $q$, então $p$. $(q \rightarrow p)$
+            \end{itemize}
+        \end{itemize}
+    \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    % \small
+    \frametitle{Operador bicondicional $(\leftrightarrow)$ }
+    \framesubtitle{Biconditional operator}
+    %
+    \setbeamercolor{enumerate item}{fg=red!80!black}
+    \setbeamertemplate{enumerate items}[default]
+    \vspace{-2mm}
+    \begin{block}{Continuação\dots}
+        Alternativamente, a \textbf{bicondicional de duas proposições} $p$ e $q$ também pode ser lida de uma das seguintes maneiras abaixo:
+        \begin{enumerate}[(i)]
+            \item $p$ é condição necessária e suficiente para $q$
+            \item $q$ é condição necessária e suficiente para $p$
+        \end{enumerate}
+        De acordo com a Tabela \ref{tab:tabela-bicondicao} abaixo, o \textbf{valor lógico} da bicondicional será VERDADEIRO somente quando também o são as condicionais $p \rightarrow q$ e $q \rightarrow p$.
+    \end{block}
+    %
+    \vspace{-4mm}
+    %
+    \begin{table}[ht]
+        \caption{Tabela verdade $(\leftrightarrow)$.}
+        \label{tab:tabela-bicondicao}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \rowcolor[HTML]{EFEFEF} 
+        \textbf{p} & \textbf{q} & \textbf{p $\leftrightarrow$ q} \\ \hline
+        $V$        & $V$        & $V$                            \\ \hline
+        $V$        & $F$        & $F$                            \\ \hline
+        $F$        & $V$        & $F$                            \\ \hline
+        $F$        & $F$        & $V$                            \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
 %
 \end{document}

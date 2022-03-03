@@ -72,50 +72,97 @@
 % }%
 % \makeatother %%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{totcount}
-\newcounter{totalsection}
-\regtotcounter{totalsection}
+% \usepackage{totcount}
+% \newcounter{totalsection}
+% \regtotcounter{totalsection}
 
-\AtBeginDocument{%
-  \pretocmd{\section}{\refstepcounter{totalsection}}{}{}%
-}%
+% \AtBeginDocument{%
+%   \pretocmd{\section}{\refstepcounter{totalsection}}{}{}%
+% }%
 
-% number of subsections per section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{xcntperchap}
-\RegisterCounters{section}{subsection}
-\newcounter{totalsubsection}
-\setcounter{totalsubsection}{0}
-
-
+% % number of subsections per section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \usepackage{xcntperchap}
+% \RegisterCounters{section}{subsection}
+% \newcounter{totalsubsection}
+% \setcounter{totalsubsection}{0}
 
 
-\newcounter{currentsub}
-\setcounter{currentsub}{0}
-\newcounter{totsection}
-\AtBeginSection[]{%
-    \setcounter{currentsub}{\ObtainTrackedValueExp[\thesection]{section}{subsection}}
-    \recalc
-}
+
+
+% \newcounter{currentsub}
+% \setcounter{currentsub}{0}
+% \newcounter{totsection}
+% \AtBeginSection[]{%
+%     \setcounter{currentsub}{\ObtainTrackedValueExp[\thesection]{section}{subsection}}
+%     \recalc
+% }
+
+% \makeatletter
+% \setbeamertemplate{headline}{%
+%   \leavevmode%
+%   \@tempdimb=2.4375ex%
+%   \ifnum\thecurrentsub<\beamer@sectionmax%
+%     \multiply\@tempdimb by\beamer@sectionmax%
+%   \else%
+%     \multiply\@tempdimb by\thecurrentsub%
+%   \fi%
+%   \ifdim\@tempdimb>0pt%
+%     \advance\@tempdimb by 1.825ex%
+%     \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{section in head/foot}%
+%       \vbox to\@tempdimb{\vfil\insertsectionnavigation{.5\paperwidth}\vfil}%
+%     \end{beamercolorbox}%
+%     \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
+%       \vbox to\@tempdimb{\vfil\insertsubsectionnavigation{.5\paperwidth}\vfil}%
+%     \end{beamercolorbox}%
+%   \fi%
+% }
+
+% \newcommand{\recalc}{\beamer@calculateheadfoot}
+% \makeatother
+
+
+\setbeamertemplate{headline}{}
 
 \makeatletter
-\setbeamertemplate{headline}{%
-  \leavevmode%
-  \@tempdimb=2.4375ex%
-  \ifnum\thecurrentsub<\beamer@sectionmax%
-    \multiply\@tempdimb by\beamer@sectionmax%
-  \else%
-    \multiply\@tempdimb by\thecurrentsub%
-  \fi%
-  \ifdim\@tempdimb>0pt%
-    \advance\@tempdimb by 1.825ex%
-    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{section in head/foot}%
-      \vbox to\@tempdimb{\vfil\insertsectionnavigation{.5\paperwidth}\vfil}%
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
-      \vbox to\@tempdimb{\vfil\insertsubsectionnavigation{.5\paperwidth}\vfil}%
-    \end{beamercolorbox}%
-  \fi%
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  \vskip-2pt%
+  \hbox{\leavevmode
+    \advance\beamer@leftmargin by -12bp%
+    \advance\beamer@rightmargin by -12bp%
+    \beamer@tempdim=\textwidth%
+    \advance\beamer@tempdim by \beamer@leftmargin%
+    \advance\beamer@tempdim by \beamer@rightmargin%
+    \hskip-\Gm@lmargin\hbox{%
+      \setbox\beamer@tempbox=\hbox{\begin{minipage}[b]{\paperwidth}%
+          \vbox{}\vskip-.75ex%
+          \vspace{2cm}% <- change here to whatever you want
+          \leftskip0.3cm%
+          \rightskip0.3cm plus1fil\leavevmode
+          \usebeamercolor[fg]{frametitle}\usebeamerfont{frametitle}\strut\insertframetitle\strut\par%
+          \ifx\insertframesubtitle\@empty\else%
+            {\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\strut\par}%
+          \fi%
+          \nointerlineskip
+          \vbox{}%
+          \end{minipage}}%
+      \beamer@tempdim=\ht\beamer@tempbox%
+      \advance\beamer@tempdim by 2pt%
+      \begin{pgfpicture}{0pt}{0pt}{\paperwidth}{\beamer@tempdim}
+        \usebeamercolor{frametitle right}
+        \pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{\beamer@tempdim}}
+        \pgfusepath{clip}
+        \pgftext[left,base]{\pgfuseshading{beamer@frametitleshade}}
+      \end{pgfpicture}
+      \hskip-\paperwidth%
+      \box\beamer@tempbox%
+    }%
+    \hskip-\Gm@rmargin%
+  }%
+  \nointerlineskip
+    \vskip-0.2pt
+    \hbox to\textwidth{\hskip-\Gm@lmargin\pgfuseshading{beamer@topshade}\hskip-\Gm@rmargin}
+    \vskip-2pt
 }
 
-\newcommand{\recalc}{\beamer@calculateheadfoot}
 \makeatother
