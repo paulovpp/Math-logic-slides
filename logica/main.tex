@@ -1,11 +1,13 @@
-\documentclass[10pt, headsepline, captions=tableabove]{beamer}
+\documentclass[10pt, headsepline, captions=tableabove,xcolor=table]{beamer}
 % ==> \documentclass[10pt, handout]{beamer}    to print 4 in one page
 \usepackage[utf8]{inputenc}
+% \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage[brazilian]{babel}
 \usepackage{xcolor}
 \usepackage{fancybox}
 \usepackage{pgfpages}
+%\usepackage{enumitem}
 % ==> \pgfpagesuselayout{4 on 1}[]      to print 4 in one page
 
 \usetheme{Warsaw}
@@ -15,6 +17,7 @@
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{footline}[frame number]
 \setbeamercovered{transparent}
+%\setbeamercovered{invisible}
 %\geometry{left=1cm, right=1cm, top=0.5cm, bottom=0.5cm}
 
 \title{Lógica Matemática}
@@ -352,20 +355,186 @@
 %
 \subsection{Exercícios}
 %
-\begin{frame}[t]
-    \frametitle{Exercícios - 1/}
+\begin{frame}[t] % \renewcommand{\theenumi}{\alph{enumii}}
+    \frametitle{Exercícios - 1/2}
     \framesubtitle{Practice the chapters concepts}
+    %
+    \small
+    \setbeamercovered{invisible}
+    \setbeamercolor{enumerate item}{fg=red!80!black}
+    \setbeamertemplate{enumerate items}[default]
+    \begin{exampleblock}{1. Identifique os itens abaixo que não são fórmulas da lógica proposicional.}
+        \begin{columns}[T]
+            \begin{column}{0.15\textwidth}
+                \begin{enumerate}[\bf a.]
+                    \item $pq$
+                    \item $PQ$
+                    \item $PQ \lnot$
+                    \item $\lnot PQ$
+                \end{enumerate}
+            \end{column}
+            %
+            \hspace*{-5mm}
+            %
+            \begin{column}{0.15\textwidth}
+                \begin{enumerate}[\bf a.]
+                    \addtocounter{enumi}{4}
+                    \item $p \land q$
+                    \item $P \lor Q$
+                    \item $PQ \land$
+                    \item $\lor PQ$
+                \end{enumerate}
+            \end{column}
+            %
+            \hspace*{-5mm}
+            %
+            \begin{column}{0.20\textwidth}
+                \begin{enumerate}[\bf a.]
+                    \addtocounter{enumi}{8}
+                    \item $p \rightarrow q$
+                    \item $PQ \rightarrow$
+                    \item $\rightarrow PQ \lnot$
+                    \item $P \rightarrow Q \rightarrow $
+                \end{enumerate}
+            \end{column}
+            %
+            \hspace*{-7mm}
+            %
+            \begin{column}{0.2\textwidth}
+                \begin{enumerate}[\bf a.]
+                    \addtocounter{enumi}{12}
+                    \item $P \rightarrow Q$
+                    \item $P \leftrightarrow Q$
+                    \item $P \leftrightarrow q$
+                    \item $\leftrightarrow P \leftrightarrow Q$
+                \end{enumerate}
+            \end{column}
+            %
+            \hspace*{-8mm}
+            %
+            \begin{column}{0.25\textwidth}
+                \begin{enumerate}[a.]
+                    \addtocounter{enumi}{16}
+                    \item $P \rightarrow true$
+                    \item $P \land true$
+                    \item $true~P \leftrightarrow q$
+                    \item $false~PQ \land$
+                \end{enumerate}
+            \end{column}
+        \end{columns}
+    \end{exampleblock}
+    %
+    \pause
+    \vspace{-2mm}
+    %
+    \begin{alertblock}{Respostas}
+        a, b, c, d, g, h, j, k, l, p, q, s, t
+    \end{alertblock}
+    %
+    \pause
+    \vspace{-2mm}
+    %
+    % \setbeamercolor{enumerate item}{fg=red!80!black}
+    % \setbeamertemplate{enumerate items}[default]
+    \begin{exampleblock}{2. Determine o comprimento das fórmulas a seguir.}
+        \begin{columns}[T]
+            \begin{column}{0.8\textwidth}
+                \begin{enumerate}[\bf a.]
+                    \item $((\lnot \lnot~P \land Q) \leftrightarrow (P \rightarrow Q)) \land~true$
+                    \item $(\lnot P \rightarrow (Q \lor R)) \leftrightarrow ((P \land Q) \leftrightarrow (\lnot \lnot R \lor \lnot P))$
+                    \item $((P \lor Q) \rightarrow (P \rightarrow (\lnot Q)))$
+                \end{enumerate}
+            \end{column}
+            %
+            \pause
+            %
+            \begin{column}{0.2\textwidth}
+                \begin{enumerate}[\bf a.]
+                    \item 11
+                    \item 13
+                    \item 8
+                \end{enumerate}
+            \end{column}
+        \end{columns}
+    \end{exampleblock}
 \end{frame}
+%
+\begin{frame}[t] % \renewcommand{\theenumi}{\alph{enumii}}
+    \frametitle{Exercícios - 2/2}
+    \framesubtitle{Practice the chapters concepts}
+    %
+    \small
+    \setbeamercolor{enumerate item}{fg=red!80!black}
+    \setbeamertemplate{enumerate items}[default]
+    \begin{exampleblock}{3. Pesquise na internet as proposições para os problemas abaixo.}
+        E, se possível, elabore a fórmula para avaliar um valor qualquer.\\
+        \begin{enumerate}[\bf P1.]
+            \item Verificar se um número $n \in \mathbb{Z} $ está no intervalo $\{n_1, n_2\}$ onde $n_1 > n_2$.
+            \item Descobrir o maior entre 2 números.
+            \item Descobrir o maior entre 3 números.
+            \item Ordenar 2 números.
+            \item Ordenar 3 números.
+            \item Avaliar se um número é primo.
+            \item Buscar letra em palavra (string).
+            \item Transformar um tempo dado em \textbf{HH:mm:ss} em apenas \textbf{ss}.
+        \end{enumerate}
+    \end{exampleblock}
+    %
+    \normalsize
+    \center{\textcolor{red}{\textbf{Trazer na próxima aula para tira-dúvidas.}}}
+    \end{frame}
 %
 %%% -------------------------------- %% -----------------------------------%%
 % Section 4 - Fundamental operations under logic propositions
 %
 \section{Operações lógicas com proposições}
 %
-\begin{frame}[t]
+\begin{frame}[c]
     \frametitle{Operações lógicas}
     \framesubtitle{Logical operation with propositions}
+    %
+    \textbf{Operadores da lógica proposicional}\\[2pt]
+    \textcolor{green!50!black}{\textbf{Quando pensamos, inerentemente ao processo estamos efetuando inúmeras operações com proposições em nossa mente. Sempre na intenção de formar um raciocínio que nos faça sentido e que possa ser solução para um determinado problema.}}\\[6pt]
+
+    \textcolor{red}{\textbf{As operações lógicas acontecem exatamente com os conectivos proposicionais. Na literatura é comum as duas nomenclaturas se confundirem.}}\\[6pt]
     
+    Neste curso, usaremos a notação de \textbf{OPERADORES}. A seguir, as operações lógicas e seus descritivos serão apresentados.
+
+\end{frame}
+%
+\subsection{Negação}
+%
+\begin{frame}[t]
+    \frametitle{Operação de negação $(\lnot)$ ou $(\sim)$}
+    \framesubtitle{Logical NOT operator}
+    %
+    \begin{block}{Definição}
+        Este conectivo não liga duas proposições, mas simplesmente nega a afirmação da proposição que o precede. Em virtude disso, é um conectivo unário, enquanto os anteriores são conectivos binários, pois ligam duas proposições.
+    \end{block}
+    %
+    \pause
+    %
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{exampleblock}{Exemplo}
+                Este conectivo não liga duas proposições, mas simplesmente nega a afirmação da proposição que o precede. Em virtude disso, é um conectivo unário, enquanto os anteriores são conectivos binários, pois ligam duas proposições.
+            \end{exampleblock}
+        \end{column}
+        %
+        \begin{column}{0.5\textwidth}
+            \begin{table}[]
+                \caption{Tabela verdade de NOT.}
+                \label{tab:tabela-not}
+                \begin{tabular}{|c|c|}
+                \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \textbf{p} & \textbf{$\sim$p} \\ \hline
+                V          & F                \\ \hline
+                F          & V                \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+    \end{columns}
 \end{frame}
 %
 \subsection{Conjunção}
@@ -381,7 +550,6 @@
 %
 \subsection{Bicondicional}
 %
-\subsection{Negação}
 
 \begin{frame}{Blocks in Beamer}
     \begin{block}{Standard Block}
