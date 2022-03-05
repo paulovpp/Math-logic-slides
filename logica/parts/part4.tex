@@ -1,0 +1,271 @@
+% Section 4 - Fundamental operations under logic propositions
+
+\section{Operações lógicas com proposições}
+%
+\begin{frame}[c]
+    \frametitle{Operações lógicas}
+    \framesubtitle{Logical operation with propositions}
+    %
+    \textbf{Operadores da lógica proposicional}\\[2pt]
+    \textcolor{green!50!black}{\textbf{Quando pensamos, inerentemente ao processo estamos efetuando inúmeras operações com proposições em nossa mente. Sempre na intenção de formar um raciocínio que nos faça sentido e que possa ser solução para um determinado problema.}}\\[6pt]
+
+    \textcolor{red}{\textbf{As operações lógicas acontecem exatamente com os conectivos proposicionais. Na literatura é comum as duas nomenclaturas se confundirem.}}\\[6pt]
+    
+    Neste curso, usaremos a notação de \textbf{OPERADORES}. A seguir, as operações lógicas e seus descritivos serão apresentados.
+
+\end{frame}
+
+
+
+\subsection{Negação}
+
+
+
+\begin{frame}[t]
+    \frametitle{Operação de negação $(\lnot)$ ou $(\sim)$}
+    \framesubtitle{Logical NOT operator}
+    %
+    \begin{block}{Definição}
+        Este conectivo não liga duas proposições, mas simplesmente nega a afirmação da proposição que o precede. Em virtude disso, é um conectivo unário, enquanto os anteriores são conectivos binários, pois ligam duas proposições.
+    \end{block}
+    %
+    \vspace{-4mm}
+    %
+    \begin{columns}[t]
+        \begin{column}{0.55\textwidth}
+            \small
+            \begin{exampleblock}{Exemplos}
+                Se $V(p) = V$, $\lnot p = F$ \\ [2pt]
+                $V(\lnot p) = \lnot V(p)$ \\ [2pt]
+                $p:~2+3=5\quad (V)$ e $\lnot p:~2+3 \neq 5\quad (F)$ \\ [2pt]
+                $q:~23 < 10 \quad (F)$ e $\lnot q:~23 \nless 10 \quad (V)$ \\[2pt]
+                $q:$ Carlos é mecânico. \\[2pt]
+                $\lnot q:$ Carlos NÃO é mecânico.
+            \end{exampleblock}
+        \end{column}
+        %
+        \hspace{-5mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \vspace{-3mm}
+            \begin{table}[t]
+                \caption{Tabela verdade $(\lnot)$.}
+                \label{tab:tabela-not}
+                \begin{tabular}{|c|c|}
+                \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \textbf{$~$p} & \textbf{$\sim$p} \\ \hline
+                V          & F                \\ \hline
+                F          & V                \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+    \end{columns}
+\end{frame}
+%
+\subsection{Conjunção}
+%
+
+\begin{frame}[t]
+    \frametitle{Conjunção ($\land$ - 'e' lógico)}
+    \framesubtitle{Logical AND operation}
+    % 
+    \begin{block}{Definição}
+        É o resultado da combinação de duas proposições ligadas pela palavra \textbf{e}, que será substituída pelo símbolo $(\land)$. Seu \textbf{valor lógico} somente será VERDADEIRO quando \emph{TODAS} as proposições tiverem seus \textbf{valores lógicos} iguais a VERDADE.
+    \end{block}
+    %
+    \vspace{-4mm}
+    %
+    \begin{columns}[t]
+        \begin{column}{0.58\textwidth}
+            \begin{alertblock}{Propriedades}
+                Sejam $p$ e $q$ proposições simples: \\[2pt]
+                $p \land q$ lê-se "p e q". \\[2pt]
+                Seja $H$ uma proposição composta $H(p,q)$: \\[2pt]
+                $H(p,q) = H(p \land q) = p \land q$ \\[2pt]
+                $V(H) = V(p \land q) = V(p) \land V(q)$
+            \end{alertblock}
+        \end{column}
+        %
+        \hspace{-10mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \vspace{-3mm}
+            \begin{table}[t]
+                \caption{Tabela verdade $(\land)$.}
+                \label{tab:table-and}
+                \begin{tabular}{|c|c|c|}
+                \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \textbf{p} & \textbf{q} & \textbf{$p \land q$} \\ \hline
+                $V$          & $V$          & $V$                    \\ \hline
+                $V$          & $F$          & $F$                    \\ \hline
+                $F$          & $V$          & $F$                   \\ \hline
+                $F$          & $F$          & $F$                    \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+    \end{columns}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Conjunção ($\land$ - 'e' lógico)}
+    \framesubtitle{Examples}
+    %
+    \begin{exampleblock}{Exemplo 1}
+        Sejam $p$ e $q$ proposições simples quaisquer, por exemplo:
+        \begin{itemize}
+            \item $p:~n > 10 \quad (V)$
+            \item $q:~f(n) = 55 \quad (V)$
+        \end{itemize}
+        $p \land q = (n >10)~e~(f(n = 55)) = V$ \\[2pt]
+        $V(p \land q) = V(p) \land V(q) = V \land V = V$
+    \end{exampleblock}
+    %
+    % \vspace{-3mm}
+    \begin{exampleblock}{Exemplo 2}
+        Seja $H(p,q)$ uma proposição composta qualquer, por exemplo:
+        \begin{itemize}
+            \item $p:$ A maça é vermelha $(V)$
+            \item $q:$ A rua é estreita  $(F)$
+        \end{itemize}
+        $H(p,q) = p \land q = V \land F = F$
+    \end{exampleblock}
+\end{frame}
+%
+\subsection{Disjunção}
+%
+\begin{frame}[t]
+    \frametitle{Disjunção ($\lor$ - 'ou' lógico)}
+    \framesubtitle{Logical OR operator}
+    %
+    \begin{block}{Definição}
+        É o resultado da combinação de duas proposições ligadas pela palavra \textbf{ou}, que será substituída pelo símbolo $\lor$. Seu \textbf{valor lógico} somente será FALSO quando \emph{TODAS} as proposições tiverem seus \textbf{valores lógicos} iguais a FALSO.
+    \end{block}
+    %
+    \vspace{-4mm}
+    %
+    \begin{columns}[t]
+        \begin{column}{0.55\textwidth}
+            \small
+            \begin{alertblock}{Propriedades}
+                Sejam $p$ e $q$ proposições simples: \\[2pt]
+                $p \lor q$ lê-se "p ou q". \\[2pt]
+                Seja $H$ uma proposição composta $H(p,q)$: \\[2pt]
+                $H(p,q) = H(p \lor q) = p \lor q$ \\[2pt]
+                $V(H) = V(p \lor q) = V(p) \lor V(q)$
+            \end{alertblock}
+        \end{column}
+        %
+        \hspace{-10mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \vspace{-3mm}
+            \begin{table}[ht]
+                \caption{Tabela verdade $(\lor)$.}
+                \label{tab:my-table}
+                \begin{tabular}{|c|c|c|}
+                \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \textbf{p} & \textbf{q} & \textbf{$p\lor q$} \\ \hline
+                $V$        & $V$        & $V$                 \\ \hline
+                $V$        & $F$        & $V$                 \\ \hline
+                $F$        & $V$        & $V$                 \\ \hline
+                $F$        & $F$        & $F$                 \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+    \end{columns}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Disjunção ($\lor$ - 'ou' lógico)}
+    \framesubtitle{Examples}
+    %
+    \begin{exampleblock}{Exemplo 1}
+        Sejam $p$ e $q$ proposições simples quaisquer, por exemplo:
+        \begin{itemize}
+            \item $p:~n > 10 \quad (V)$
+            \item $q:~n \leq 25 \quad (V)$
+        \end{itemize}
+        $p \lor q = (n >10)~ou~(n \leq 55) = V$ \\[2pt]
+        %$V(p \lor q) = V(p) \lor V(q) = V \lor V = V$
+    \end{exampleblock}
+    %
+    % \vspace{-3mm}
+    \begin{exampleblock}{Exemplo 2}
+        Seja $H(p,q)$ uma proposição composta qualquer, por exemplo:
+        \begin{itemize}
+            \item $p:$ Maria foi ao cinema. $(V)$
+            \item $q:$ Maria foi ao teatro. $(F)$
+        \end{itemize}
+        $H(p,q):$ Maria foi ao cinema ou ao teatro. \\[2pt]
+        $H(p,q) = p \lor q = V \lor F = F$
+    \end{exampleblock}
+\end{frame}
+%
+\subsection{Disjunção exclusiva}
+%
+\begin{frame}[t]
+    \frametitle{Disjunção exclusiva ($\veebar$ - 'ou exclusivo' lógico)}
+    \framesubtitle{Logical XOR operator}
+    %
+    \begin{block}{Definição}
+        Na linguagem falada, o termo "ou" tem \textbf{dois significados}. Por exemplo:\\ [2pt]
+        $H:$ Antonio é cearense e pernambucano. \\[2pt]
+        $G:$ José é eletricista e encanador.
+    \end{block}
+    %
+    \vspace{-2mm}
+    \pause
+    %
+    \begin{block}{}
+        Na proposição $H$ existe a indicação de duas proposições:
+        \begin{itemize}
+            \item[] $p:$ Antonio é cearense.
+            \item[] $q:$ Antonio é pernambucano.
+        \end{itemize}
+        Nota-se pelo contexto que \textbf{APENAS} uma das proposições pode ser verdadeira, tornando assim o resultado \textbf{mutualmente excludente}.
+    \end{block}
+    %
+    \vspace{-2mm}
+    \pause
+    %
+    \begin{block}{}
+        Para a proposição compostas $H(p,q)$ têm-se que:
+        \begin{itemize}
+            \item $H(p,q) = p \veebar q$
+        \end{itemize}
+    \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Disjunção exclusiva ($\veebar$ - 'ou exclusivo' lógico)}
+    \framesubtitle{Logical XOR operator}
+    %
+    \vspace{-2mm}
+    \begin{block}{Comparativo}
+        Já para a proposição $G(r,s) \longrightarrow G(r,s) = r \lor s $:
+        \begin{itemize}
+            \item[] $r:$ José é eletricista.
+            \item[] $s:$ José é encanador.
+        \end{itemize}
+        Percebe-se então que no caso da proposição $G$, as duas proposições simples $r$ e $s$ não são \textbf{mutualmente excludentes}. Ou seja, ambas podem ter seus \textbf{valores lógicos} iguais a VERDADEIRO. \\[2pt]
+    \end{block}
+    %
+    \vspace{-5mm}
+    %
+    \begin{table}[ht]
+        \caption{Tabela verdade $(\veebar)$.}
+        \label{tab:tabela-xor}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \rowcolor[HTML]{EFEFEF} 
+        \textbf{p} & \textbf{q} & \textbf{p $\veebar$ q} \\ \hline
+        $V$        & $V$        & $F$                    \\ \hline
+        $V$        & $F$        & $V$                    \\ \hline
+        $F$        & $V$        & $V$                    \\ \hline
+        $F$        & $F$        & $F$                    \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}

@@ -1,0 +1,142 @@
+%% Section 2 - Propositional logic - beginning
+
+\section{Lógica proposicional - início}
+%
+\subsection{Conceitos iniciais}
+%
+\begin{frame}[t]
+    \frametitle{Conceitos iniciais}
+    \framesubtitle{Introductory definitions to start the course}
+    %
+    \setbeamercolor{block title}{use=structure,fg=white,bg=purple!75!black}
+    % \setbeamercolor{block body}{use=structure,fg=black,bg=white!20!white}
+    \begin{block}<1->{Alfabeto da lógica proposicional}
+        \begin{itemize}
+            \item Símbolo de pontuação: (,)
+            \item Símbolos booleanos: \textit{true (verdadeiro), false(falso)}
+            \item Símbolos proposicionais simples: $p,~q,~r,~s,~p_1,~q_2$
+            \item Símbolos proposicionais compostos: $P,~Q,~R,~S,~P_1,~Q_1,~S_2$
+            \item Conectivos proposicionais: $\land,~\lor,~\veebar,~\lnot,~\rightarrow, ~\leftrightarrow$
+        \end{itemize}
+    \end{block}
+    %
+    \begin{block}<2->{Fórmulas}
+        \quad São conjuntos de proposições unidos por um conectivo obtendo um valor booleano como resultante. São construídas a partir dos símbolos do alfabeto proposicional.\\
+        \quad \textcolor{red}{Tal como ocorre nas linguagens faladas ou escritas, não é qualquer concatenação de símbolos que é uma fórmula.}
+    \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    \small
+    \frametitle{Algumas definições}
+    \framesubtitle{Examples of logic formulas}
+    \setbeamercolor{block title}{use=structure,fg=white,bg=black!75!black}
+    \begin{block}{Propriedades das fórmulas}
+        \begin{itemize}
+            \item Todo símbolo de verdade $(V)$ é uma fórmula.
+            \item Todo símbolo proposicional é uma fórmula.
+            \item Se $H$ é uma fórmula então $(\lnot H)$, a negação de $H$, é uma fórmula.
+            \item Se $H$ e $G$ são fórmulas então $(H \land G)$, $(H \lor G)$,  $(H \veebar G)$, $(H \rightarrow G)$ e $(H \leftrightarrow G)$ são fórmulas. 
+        \end{itemize}
+    \end{block}    
+    %
+    % {\color{blue} \rule{\linewidth}{1mm}}
+    \vspace{-2mm}
+    \pause
+    \begin{block}{Não são fórmulas}
+        \begin{itemize}
+            \item $PR$
+            \item $(H~true~\leftrightarrow)$
+            \item $(true~\rightarrow \leftrightarrow (H~true \rightarrow))$
+            \item $PH \rightarrow \land$
+            \item $true \rightarrow \lor$
+        \end{itemize}
+    \end{block}
+\end{frame}
+%
+\subsection{Princípios fundamentais da lógica matemática}
+%
+\begin{frame}
+    \frametitle{Princípios da lógica clássica}
+    %\framesubtitle{Basic principles compared to fundamental rules to mathematical logic}
+    %
+    \begin{block}{Princípio da identidade}
+        Toda proposição é idêntica a si mesma. \\
+        \center{$P~\text{é igual a}~P$}
+    \end{block}
+    \pause
+    %
+    \setbeamercolor{block title}{use=structure,fg=white,bg=blue!75!black}
+    \begin{block}{Princípio da não contradição}
+        Uma proposição não pode ser \textit{verdadeira} e \textit{falsa} ao mesmo tempo.
+        $$ \text{não}~\left(P~\text{e não}~P\right) $$
+    \end{block}
+    %
+    \pause
+    %
+    \setbeamercolor{block title}{use=structure,fg=white,bg=cyan!75!black}
+    \begin{block}{Princípio do terceiro excluído}
+        Toda proposição ou é verdadeira ou é falsa, não existindo um terceiro valor que ela possa assumir.
+        $$ P~\text{ou não}~P~(\otimes - \text{ou exclusivo})$$
+    \end{block}
+\end{frame}
+%
+\subsection{Tipos de proposições}
+%
+\begin{frame}
+    \frametitle{Proposição simples e compostas}
+    \framesubtitle{Simple or compound preposition}
+    $\star$ \textbf{Proposições simples}\\
+    É aquela que contêm somente uma afirmação.\\
+    \textbf{Exemplo:}\\
+    \textcolor{teal}{Nós somos ricos.}\\
+    \textcolor{teal}{Não como todo dia.}\\
+    %
+    \hfill \break
+    $\star$ \textbf{Proposições compostas}\\
+    Uma proposição é dita composta quando for constituída por uma sequência finita de pelo menos duas proposições.\\
+    \textbf{Exemplo:}\\
+    \textcolor{teal}{Vamos ao cinema ou ao teatro.}\\
+    \textcolor{teal}{O céu é azul e cheio de nuvens.}
+\end{frame}
+%
+\subsection{Conectivos proposicionais}
+%
+\begin{frame}[t]
+    \frametitle{Conectivos do cálculo proposicional}
+    \framesubtitle{Conectors for all arithmetic with propositions.}
+    Na linguagem comum, palavras explícitas são utilizadas ou não para interligar frases dotadas de algum sentido. Tais palavras são substituídas, na \textbf{Lógica Matemática}, por símbolos denominados \textit{conectivos lógicos}.\\
+    \hfill \break
+    Em nosso estudo, nos restringiremos inicialmente ao chamado \textbf{cálculo proposicional}. Por essa razão, os conectivos utilizados são conhecidos por \textit{sentenciais} ou \textit{proposicionais.}\\
+    \hfill \break
+    Existem cinco conectivos que substituirão simbolicamente as expressões:
+    \begin{itemize}
+        \item \textit{e}$~(\land)$ - do inglês \textit{AND}
+        \item \textit{ou}$~(\lor)$ - do inglês \textit{OR} 
+        \item \textit{se ..., então ...}$(\rightarrow)$ - do inglês \textit{IF ... then ...}
+        \item \textit{se, e somente se ...}$(\leftrightarrow)$ - do inglês \textit{IF  and ONLY IF ...}
+        \item \textit{não}$~(\lnot)$ - do inglês \textit{NOT}
+    \end{itemize}
+\end{frame}
+%
+\begin{frame}[t]
+    \small
+    \frametitle{Conectivos do cálculo proposicional}
+    \framesubtitle{Examples}
+    %
+    \begin{exampleblock}{Exemplo 1}
+        \textbf{Somos pobres mortais e fanáticos torcedores da vida.}\\[2pt]
+        É uma proposição composta:\\[2pt]
+        \textbf{1a proposição:} somos pobres mortais, \\[2pt]
+        \textbf{2a proposição:} somos fanáticos torcedores da vida, \\[2pt]
+        \textbf{Conectivo:} e (\textit{AND})
+    \end{exampleblock}
+    %
+    \begin{exampleblock}{Exemplo 2}
+        \textbf{Se não nos alimentarmos, morremos.}\\[2pt]
+        É uma proposição composta:\\[2pt]
+        \textbf{1a proposição:} nos alimentarmos, \\[2pt]
+        \textbf{2a proposição:} (nós) morreremos, \\[2pt]
+        \textbf{Conectivo:} Se ..., então ...
+    \end{exampleblock}
+\end{frame}
