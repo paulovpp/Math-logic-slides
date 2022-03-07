@@ -1,23 +1,33 @@
 \usepackage[utf8]{inputenc}
 % \usepackage{multicol}
 \usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsfonts}
 \usepackage[brazilian]{babel}
 \usepackage{xcolor}
 \usepackage{fancybox}
 \usepackage{pgfpages}
 \usepackage{pifont}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{tcolorbox}
 %\usepackage{enumitem}
 % ==> \pgfpagesuselayout{4 on 1}[]      to print 4 in one page
 
-\mode<presentation>{\usetheme{Warsaw}\setbeamercovered{transparent}}
-% \usetheme{Warsaw}
-\usecolortheme{default}
-% \setbeamercovered{transparent}
-\usefonttheme{professionalfonts}
+\mode<presentation>{
+  \usetheme{Warsaw}
+  % \setbeamercovered{transparent}
+  \setbeamercovered{dynamic}
+  % \beamertemplatenavigationsymbolsempty
+  \usecolortheme{default}
+  % \setbeamercovered{transparent}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{caption}[numbered]
+  % \setbeamertemplate{footline}[frame number]
+}
 \graphicspath{{./imgs/}}
-\setbeamertemplate{caption}[numbered]
-\setbeamertemplate{footline}[frame number]
-
 \setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection} 
 % \setbeamertemplate{navigation symbols}{} % remove navigation panel
 % TOC style
@@ -45,3 +55,9 @@
   \fi%
 }
 \makeatother
+
+\newcommand*\oldmacro{}%
+\let\oldmacro\insertshorttitle%
+\renewcommand*\insertshorttitle{%
+	\oldmacro\hfill \hspace*{2cm} %
+	\insertframenumber\, de \,\inserttotalframenumber}
