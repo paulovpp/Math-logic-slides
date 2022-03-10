@@ -1,0 +1,87 @@
+%% Section 1 - Tabela verdade
+\section{Tabela verdade}
+%
+\subsection{Definições iniciais}
+%
+\begin{frame}[c]
+    \frametitle{Definições iniciais}
+    \framesubtitle{Introductory definitions to the topic}
+    \begin{block}{Número de linhas}
+        O número de linhas de uma tabela verdade de uma proposição composta depende do número $n$ de proposições simples que a integram sendo dado pela regra: \\[2pt]
+        \begin{equation}
+            2^n \quad \text{linhas}
+        \end{equation}
+    \end{block}
+    %
+    \begin{tcolorbox}[colback=red!5,colframe=red!75!black,title=My title]
+        My cool formalization
+        \tcblower
+        \begin{equation}
+            \displaystyle\sum\limits_{i=1}^n i = \frac{n(n+1)}{2}    
+        \end{equation}
+        \textcolor{red}{Text in RED!!}
+    \end{tcolorbox}
+\end{frame}
+%
+\subsection{Construção de uma tabela verdade}
+%
+{
+\setbeamercolor{background canvas}{bg=black!15!white}
+\begin{frame}[t]
+    \frametitle{Construção de uma tabela verdade}
+    \framesubtitle{True table construction}
+    %
+    \begin{exampleblock}{Estudo de caso}
+        Caso 1: $H(p,q) = \lnot (p~\land \lnot q)$
+    \end{exampleblock}
+    %
+    \begin{table}[T]
+        \caption{Composição de tabela verdade.}
+        \label{tab:tabela-caso-1}
+        \begin{tabular}{|c|c|c|l|l|}
+            % \tiny
+            \hline
+            \rowcolor[HTML]{EFEFEF} 
+            \textbf{p} & \textbf{q} & \textbf{$\lnot q$} & \textbf{$p~\land \lnot q$} & \textbf{$\lnot (p~\land \lnot q)$} \\ \hline
+            $V$ & $V$ &  &  &  \\ \hline
+            $V$ & $F$ &  &  &  \\ \hline
+            $F$ & $V$ &  &  &  \\ \hline
+            $F$ & $F$ &  &  &  \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+}
+%
+\begin{frame}[t]
+    \frametitle{Construção de uma tabela verdade}
+    \framesubtitle{True table construction}
+    %
+    \begin{exampleblock}{Estudo de caso}
+        Caso 2: $G(p,q) = \lnot (p~\land \lnot q) \lor \lnot (q~\leftrightarrow p)$
+    \end{exampleblock}
+    %
+    % \vspace{-4mm}
+    % \hspace{-10mm}
+    %
+    \begin{table}[ht]
+        \footnotesize
+        \caption{Composição de tabela verdade.}
+        \label{tab:tabela-caso-2}
+        \begin{tabular}{|c|c|c|l|l|l|l|}
+            \hline
+            \rowcolor[HTML]{EFEFEF} 
+            \textbf{p} &
+            \textbf{q} &
+            \textbf{$p~\land \lnot q$} &
+            \textbf{$q \leftrightarrow p$} &
+            \textbf{$\lnot (p~\land \lnot q)$} &
+            \textbf{$\lnot (q \leftrightarrow p)$} &
+            \textbf{$\lnot (p~\land q) \lor \lnot (q~\leftrightarrow p)$} \\ \hline
+            $V$ & $V$ &  &  &  &  &  \\ \hline
+            $V$ & $F$ &  &  &  &  &  \\ \hline
+            $F$ & $V$ &  &  &  &  &  \\ \hline
+            $F$ & $F$ &  &  &  &  &  \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+%

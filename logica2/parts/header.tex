@@ -1,0 +1,75 @@
+\usepackage[utf8]{inputenc}
+% \usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage[brazilian]{babel}
+\usepackage{xcolor}
+\usepackage{fancybox}
+\usepackage{pgfpages}
+\usepackage{pifont}
+\usepackage[absolute,overlay]{textpos}
+% \usepackage{physics}
+\usepackage{siunitx}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+
+%\usepackage{enumitem}
+% ==> \pgfpagesuselayout{4 on 1}[]      to print 4 in one page
+
+\mode<presentation>{
+  \usetheme{Warsaw}
+  % \setbeamercovered{transparent}
+  \setbeamercovered{dynamic}
+  % \beamertemplatenavigationsymbolsempty
+  \usecolortheme{default}
+  % \setbeamercovered{transparent}
+  \usefonttheme{professionalfonts}
+  \setbeamertemplate{caption}[numbered]
+  % \setbeamertemplate{footline}[frame number]
+}
+\graphicspath{{./imgs/}}
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection} 
+% \setbeamertemplate{navigation symbols}{} % remove navigation panel
+% TOC style
+%\setbeamercovered{invisible}
+%\geometry{left=1cm, right=1cm, top=0.5cm, bottom=0.5cm}
+
+
+\makeatletter
+\setbeamertemplate{headline}{%
+  \leavevmode%
+  \@tempdimb=2.4375ex%
+  \ifnum\beamer@subsectionmax<\beamer@sectionmax%
+    \multiply\@tempdimb by\beamer@sectionmax%
+  \else%
+    \multiply\@tempdimb by\beamer@subsectionmax%
+  \fi%
+  \ifdim\@tempdimb>0pt%
+    \advance\@tempdimb by 3ex% here is the fix
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{section in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsectionnavigation{.5\paperwidth}\vfil}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsubsectionnavigation{.5\paperwidth}\vfil}%
+    \end{beamercolorbox}%
+  \fi%
+}
+\makeatother
+
+\newcommand*\oldmacro{}%
+\let\oldmacro\insertshorttitle%
+\renewcommand*\insertshorttitle{%
+	\oldmacro\hfill \hspace*{2cm} %
+	\insertframenumber\, de \,\inserttotalframenumber}
+
+  % Rename shortcuts for logic symbols
+
+\newcommand{\n}{\lnot}
+\newcommand{\rar}{\rightarrow}
+\newcommand{\lr}{\leftrightarrow}
+\newcommand{\e}{\land}
+\newcommand{\ou}{\lor}
