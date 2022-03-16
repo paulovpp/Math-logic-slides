@@ -1,17 +1,20 @@
-% Beamer box colors
+\section{Shortcuts}
+
+\subsection{Beamer box colors}
+
 \setbeamercolor{block title}{use=structure,fg=white,bg=black!75!black}
 \setbeamercolor{block title}{use=structure,fg=white,bg=blue!75!black}
 \setbeamercolor{block title}{use=structure,fg=white,bg=purple!75!black}
 \setbeamercolor{block title}{use=structure,fg=white,bg=cyan!75!black}
 \setbeamercolor{block title}{use=structure,fg=white,bg=orange!75!black}
 
-% Colored line
+\subsection{Colored line}
 {\color{blue} \rule{\linewidth}{1mm}}
 
-% Line break
+\subsection{Line break}
 \hfill \break
 
-% Picture environment
+\subsection{Picture environment}
 \begin{figure}[c]
     \centering
     \caption{Tabela verdade para uma proposição composta $H(p,q,r)$.}
@@ -19,7 +22,7 @@
     \label{fig:tabela-verdade3}
 \end{figure}
 
-% Set background color of the frame - insert immediately outside the frame 
+\subsection{Set background color of the frame - insert immediately outside the frame}
 {
     \setbeamercolor{background canvas}{bg=black!15!white}
     \setbeamercolor{background canvas}{bg=yellow!20}
@@ -28,7 +31,7 @@
     \end{frame}
 }
 
-% Nice box with tcolorbox
+\subsection{Nice box with tcolorbox}
 \begin{tcolorbox}[colback=blue!5,colframe=blue!75!black,title=My title]
 \begin{tcolorbox}[colback=blue!5,colframe=blue!75!black,title=My title]
     My cool formalization
@@ -37,7 +40,7 @@
     \textcolor{red}{Text in RED!!}
 \end{tcolorbox}
 
-% Set a background picture - insert inside a block environment
+\subsection{Set a background picture - insert inside a block environment}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 
@@ -48,7 +51,7 @@
     };
 \end{tikzpicture}
 
-% Several columns with an enumerate environment\setbeamercovered{invisible}
+\subsection{Several columns with an enumerate environment\setbeamercovered{invisible}}
 \setbeamercolor{enumerate item}{fg=red!80!black}
 \setbeamertemplate{enumerate items}[default]
 \begin{exampleblock}{1. Identifique os itens abaixo que não são fórmulas da lógica proposicional.}

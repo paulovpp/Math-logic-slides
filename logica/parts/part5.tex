@@ -80,7 +80,7 @@
             \item[] $r:$ Maio tem 31 dias.
             \item[] $s:$ A terra é plana. 
         \end{itemize}
-        $r \rightarrow s:$ Se Santos Dumont é cearense, então Fevereiro tem 31 dias. $(F)$ \\[2pt]
+        $r \rightarrow s:$ Se Maio tem 31 dias, então a terra não é plana. $(F)$ \\[2pt]
         $V(r \rightarrow r) = V(r) \rightarrow V(s) = V \rightarrow F = F$
     \end{exampleblock}
     %
@@ -147,4 +147,29 @@
         $F$        & $F$        & $V$                            \\ \hline
         \end{tabular}
     \end{table}
+\end{frame}
+%
+\subsection{Resumo}
+%
+\begin{frame}[t]
+    \frametitle{Resumo dos operadores}
+    \framesubtitle{Sections summary}
+
+    \setbeamercolor{block title}{use=structure,fg=white,bg=purple!75!black}
+    \begin{block}{Operações lógicas}
+        \begin{table}[]
+    \caption{Operações lógicas com proposições.}
+    \label{tab:resumo}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \rowcolor[HTML]{656565} 
+    {\color[HTML]{FFFFFF} \textbf{$p$}} & {\color[HTML]{FFFFFF} \textbf{$q$}} & {\color[HTML]{FFFFFF} \textbf{$\lnot p$}} & {\color[HTML]{FFFFFF} \textbf{$\land$}} & {\color[HTML]{FFFFFF} \textbf{$\lor$}} & {\color[HTML]{FFFFFF} \textbf{$\veebar$}} & {\color[HTML]{FFFFFF} \textbf{$\rightarrow$}} & {\color[HTML]{FFFFFF} \textbf{$\leftrightarrow$}} \\ \hline
+    $V$                               & $V$                               & $F$                                       & $V$                                     & $V$                                    & $F$                                       & $V$                                           & $V$                                               \\ \hline
+    $V$                               & $F$                               & $F$                                       & $F$                                     & $V$                                    & $V$                                       & $F$                                           & $F$                                               \\ \hline
+    $F$                               & $V$                               & $V$                                       & $F$                                     & $V$                                    & $V$                                       & $V$                                           & $F$                                               \\ \hline
+    $F$                               & $F$                               & $V$                                       & $F$                                     & $F$                                    & $F$                                       & $V$                                           & $V$                                               \\ \hline
+    \end{tabular}
+    \end{table}
+    \end{block}
+
 \end{frame}
