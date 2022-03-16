@@ -4,49 +4,72 @@
 \subsection{Definições iniciais}
 %
 \begin{frame}[c]
+    \setbeamercolor{part title}{fg=white, bg=blue!65!black}
+    \begin{beamercolorbox}[rounded=true,shadow=true,sep=12pt,center]{part title}
+        \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+\end{frame}
+%
+\begin{frame}[t]
     \frametitle{Definições iniciais}
     \framesubtitle{Introductory definitions to the topic}
-    \begin{block}{Número de linhas}
-        O número de linhas de uma tabela verdade de uma proposição composta depende do número $n$ de proposições simples que a integram sendo dado pela regra: \\[2pt]
+    %
+    \begin{tcolorbox}[colback=blue!5,colframe=blue!60!black,adjusted title=Número de linhas]
+        O número de linhas de uma tabela verdade de uma proposição composta depende do número $n$ de proposições simples que a integram sendo dado pela regra:
         \begin{equation}
             2^n \quad \text{linhas}
         \end{equation}
-    \end{block}
-    %
-    \begin{tcolorbox}[colback=red!5,colframe=red!75!black,title=My title]
-        My cool formalization
+        %
         \tcblower
-        \begin{equation}
-            \displaystyle\sum\limits_{i=1}^n i = \frac{n(n+1)}{2}    
-        \end{equation}
-        \textcolor{red}{Text in RED!!}
+        %
+        Para $n$ proposições simples do tipo $p_1,~p_2,\dots,p_n$, então a tabela verdade deve possuir um total de $n$ colunas para as proposições simples e $2^n$ linhas. Posto isso:
+        \begin{itemize}
+            \item Para a 1\textsuperscript{\d a} proposição simples $p_1$ atribui-se $2^n / 2^1 = 2^{n-1}$ valores $V$ seguidos de $F$ na mesma proporção.
+        \end{itemize}
+    \end{tcolorbox}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Definições iniciais}
+    \framesubtitle{Introductory definitions to the topic}
+    %
+    \begin{tcolorbox}[colback=blue!5,colframe=blue!60!black,adjusted title=Número de linhas]
+        \begin{itemize}
+            \item Para a 2\textsuperscript{\d a} proposição simples $p_2$ atribui-se $2^n / 2^2 = 2^{n-2}$ valores $V$ seguidos de $F$ na mesma proporção, repetindo-se até o final da tabela.
+            \item Para a 3\textsuperscript{\d a} proposição simples $p_3$ atribui-se $2^n / 2^3 = 2^{n-3}$ valores $V$ seguidos de $F$ na mesma proporção, repetindo-se até o final da tabela.
+            \item De modo genérico, para a k-ésima proposição simples $p_k (k\leq n)$ atribui-se \textbf{alternadamente} 
+            \begin{equation}
+                2^n / 2^k = 2^{n-k}
+            \end{equation}
+            valores $V$ seguidos de igual número de valores $F$, repetindo a sequência até o final das linhas da tabela verdade.
+        \end{itemize}
     \end{tcolorbox}
 \end{frame}
 %
 \subsection{Construção de uma tabela verdade}
 %
 {
-\setbeamercolor{background canvas}{bg=black!15!white}
+\setbeamercolor{background canvas}{bg=yellow!15!white}
 \begin{frame}[t]
     \frametitle{Construção de uma tabela verdade}
     \framesubtitle{True table construction}
     %
-    \begin{exampleblock}{Estudo de caso}
-        Caso 1: $H(p,q) = \lnot (p~\land \lnot q)$
+    \begin{exampleblock}{}
+        \textbf{Caso 1:} $H(p,q) = \lnot (p~\land \lnot q)$
     \end{exampleblock}
     %
     \begin{table}[T]
-        \caption{Composição de tabela verdade.}
+        \caption{Tabela verdade para uma proposição composta $H(p,q)$.}
         \label{tab:tabela-caso-1}
-        \begin{tabular}{|c|c|c|l|l|}
+        \begin{tabular}{|c|c|c|c|c|}
             % \tiny
             \hline
             \rowcolor[HTML]{EFEFEF} 
-            \textbf{p} & \textbf{q} & \textbf{$\lnot q$} & \textbf{$p~\land \lnot q$} & \textbf{$\lnot (p~\land \lnot q)$} \\ \hline
-            $V$ & $V$ &  &  &  \\ \hline
-            $V$ & $F$ &  &  &  \\ \hline
-            $F$ & $V$ &  &  &  \\ \hline
-            $F$ & $F$ &  &  &  \\ \hline
+            \textbf{p} & \textbf{q} & $\lnot q$ & $p~\land \lnot q$ & $\lnot (p~\land \lnot q)$ \\ \hline
+            $V$ & $V$ & $F$ & $F$ & $V$ \\ \hline
+            $V$ & $F$ & $V$ & $V$ & $F$ \\ \hline
+            $F$ & $V$ & $F$ & $F$ & $V$ \\ \hline
+            $F$ & $F$ & $V$ & $F$ & $V$ \\ \hline
         \end{tabular}
     \end{table}
 \end{frame}
@@ -56,8 +79,8 @@
     \frametitle{Construção de uma tabela verdade}
     \framesubtitle{True table construction}
     %
-    \begin{exampleblock}{Estudo de caso}
-        Caso 2: $G(p,q) = \lnot (p~\land \lnot q) \lor \lnot (q~\leftrightarrow p)$
+    \begin{exampleblock}{}
+        \textbf{Caso 2:} $G(p,q) = \lnot (p~\land \lnot q) \lor \lnot (q~\leftrightarrow p)$
     \end{exampleblock}
     %
     % \vspace{-4mm}
@@ -65,9 +88,9 @@
     %
     \begin{table}[ht]
         \footnotesize
-        \caption{Composição de tabela verdade.}
+        \caption{Tabela verdade para uma proposição $G(p,q)$.}
         \label{tab:tabela-caso-2}
-        \begin{tabular}{|c|c|c|l|l|l|l|}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
             \hline
             \rowcolor[HTML]{EFEFEF} 
             \textbf{p} &
@@ -77,11 +100,46 @@
             \textbf{$\lnot (p~\land \lnot q)$} &
             \textbf{$\lnot (q \leftrightarrow p)$} &
             \textbf{$\lnot (p~\land q) \lor \lnot (q~\leftrightarrow p)$} \\ \hline
-            $V$ & $V$ &  &  &  &  &  \\ \hline
-            $V$ & $F$ &  &  &  &  &  \\ \hline
-            $F$ & $V$ &  &  &  &  &  \\ \hline
-            $F$ & $F$ &  &  &  &  &  \\ \hline
+            $V$ & $V$ & $F$ & $V$ & $V$ & $F$ & $V$ \\ \hline
+            $V$ & $F$ & $V$ & $F$ & $F$ & $V$ & $V$ \\ \hline
+            $F$ & $V$ & $F$ & $F$ & $V$ & $V$ & $V$ \\ \hline
+            $F$ & $F$ & $F$ & $V$ & $V$ & $F$ & $V$ \\ \hline
+        \end{tabular}
+    \end{table}
+    \begin{center}
+        \textbf{\textcolor{red}{Proposição Tautológica.}}    
+    \end{center}
+\end{frame}
+%
+{
+\setbeamercolor{background canvas}{bg=yellow!15!white}
+\begin{frame}[t]
+    \frametitle{Construção de uma tabela verdade}
+    \framesubtitle{True table construction}
+    %
+    \begin{exampleblock}{}
+        \textbf{Caso 3:} $P(p,q,r) = (p \rar (\n q \ou r)) \e \n (q \ou(p \lr \n r))$
+    \end{exampleblock}
+    %
+    \begin{table}[]
+        \caption{Tabela verdade para uma proposição $P(p,q,r)$.}
+        \label{tab:tabela-caso-3}
+        \renewcommand{\tabcolsep}{3pt}
+        \begin{tabular}{cccc|c|c|c|c}
+        \cline{5-5} \cline{7-7}
+        \multicolumn{1}{l}{}                                     & \multicolumn{1}{l}{}                                    & \multicolumn{1}{l}{}                                    & \multicolumn{1}{l|}{} & \textbf{A}                         & \multicolumn{1}{l|}{}       & \textbf{B}                                      & \multicolumn{1}{l}{}                                     \\ \hline
+        \rowcolor[HTML]{EFEFEF} 
+        \multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{p}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{q}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{r}} & $\lnot q \lor r$      & $(p \rightarrow (\lnot q \lor r))$ & $p \leftrightarrow \lnot r$ & \textbf{$(q \lor (p \leftrightarrow \lnot r))$} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}$A \land B$} \\ \hline
+        \multicolumn{1}{|c|}{$V$}                                & \multicolumn{1}{c|}{$V$}                                & \multicolumn{1}{c|}{$V$}                                & $V$                   & $V$                                & $F$                         & $F$                                             & \multicolumn{1}{c|}{$F$}                                 \\ \hline
+        \multicolumn{1}{|c|}{$V$}                                & \multicolumn{1}{c|}{$V$}                                & \multicolumn{1}{c|}{$F$}                                & $F$                   & $F$                                & $V$                         & $V$                                             & \multicolumn{1}{c|}{$F$}                                 \\ \hline
+        \multicolumn{1}{|c|}{$V$}                                & \multicolumn{1}{c|}{$F$}                                & \multicolumn{1}{c|}{$V$}                                & $V$                   & $V$                                & $F$                         & $F$                                             & \multicolumn{1}{c|}{$F$}                                 \\ \hline
+        \multicolumn{1}{|c|}{$V$}                                & \multicolumn{1}{c|}{$F$}                                & \multicolumn{1}{c|}{$F$}                                & $V$                   & $V$                                & $V$                         & $F$                                             & \multicolumn{1}{c|}{$F$}                                 \\ \hline
+        \multicolumn{1}{|c|}{$F$}                                & \multicolumn{1}{c|}{$V$}                                & \multicolumn{1}{c|}{$V$}                                & $V$                   & $V$                                & $V$                         & $V$                                             & \multicolumn{1}{c|}{$V$}                                 \\ \hline
+        \multicolumn{1}{|c|}{$F$}                                & \multicolumn{1}{c|}{$V$}                                & \multicolumn{1}{c|}{$F$}                                & $F$                   & $V$                                & $F$                         & $F$                                             & \multicolumn{1}{c|}{$F$}                                 \\ \hline
+        \multicolumn{1}{|c|}{$F$}                                & \multicolumn{1}{c|}{$F$}                                & \multicolumn{1}{c|}{$V$}                                & $V$                   & $V$                                & $V$                         & $F$                                             & \multicolumn{1}{c|}{$F$}                                 \\ \hline
+        \multicolumn{1}{|c|}{$F$}                                & \multicolumn{1}{c|}{$F$}                                & \multicolumn{1}{c|}{$F$}                                & $V$                   & $V$                                & $F$                         & $F$                                             & \multicolumn{1}{c|}{$F$}                                 \\ \hline
         \end{tabular}
     \end{table}
 \end{frame}
-%
+}
+% 
