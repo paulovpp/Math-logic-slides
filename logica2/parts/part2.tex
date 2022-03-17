@@ -1,0 +1,125 @@
+%% Section 2 - Mundo da lógica proposicional
+\section{Lógica proposicional - sintaxe e semântica}
+%
+\subsection{Mundo da lógica proposicional}
+%
+\begin{frame}[c]
+    \setbeamercolor{part title}{fg=white, bg=blue!65!black}
+    \begin{beamercolorbox}[rounded=true,shadow=true,sep=12pt,center]{part title}
+        \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Algumas definições}
+    \framesubtitle{Some definitions to the topic}
+    %
+    \begin{tcolorbox}[colback=blue!5,colframe=blue!60!black,adjusted title=Mundo lógico]
+        O mundo da lógica conforme conhecemos pode ser dividido em duas partes distintas a seguir:
+        \begin{itemize}
+            \item Sintaxe - mundo sintático
+            \item Semântica - mundo semântico
+        \end{itemize}
+    \end{tcolorbox}
+    %    
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Descritivo]
+        \textbf{Sintaxe:} responsável pelo conjunto de símbolos (ALFABETO), conectivos e figuras utilizados pela lógica.
+        %
+        \tcblower
+        %
+        \textbf{Semântica:} responsável pelas operações e regras de forma a utilizar da melhor forma possível o conjunto de símbolos.
+    \end{tcolorbox}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Algumas definições}
+    \framesubtitle{Some definitions to the topic}
+    %
+    \begin{block}{Na prática}
+        \begin{itemize}
+            \item O computador é um aparelho extremamente sintático - opera com a representação de símbolos em linguagem de máquina, \textbf{baixo nível} e com a possibilidade de conversão dos mesmos para um nível inteligível aos seres humanos, conhecido como \textbf{alto nível}.
+            \item Para que o computador possa desempenhar suas funções, um conjunto de regras (ALGORITMO) precisa ser definido, enviado e traduzido para sua interpretação e execução.
+        \end{itemize}
+    \end{block}
+    %
+    \setbeamercolor{block title}{use=structure,fg=black,bg=yellow!75!black}
+    \begin{block}{Regras ou significados}
+        Caso a definição ou o significado de um conjunto de símbolos não seja bem definido, falhas de semântica podem ocorrer. Isso não fará com que não haja processamento. Porém, o resultado pode não ser o esperado.
+    \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Algumas definições}
+    \framesubtitle{Some definitions to the topic}
+    %
+    \begin{block}{Exemplo de falha semântica}
+        Observe o seguinte conjunto de caracteres - símbolos sintáticos:
+        \begin{center}
+            \textbf{R  E  D  E}
+        \end{center}
+    \end{block}
+        %
+    \begin{exampleblock}{}
+        \indent Caso o uso do seguinte conjunto de símbolos seja utilizado sem a prévia e correta definição de sua usabilidade, poderá haver uma falha de execução e resultados discrepantes. Observa-se pelo menos três possíveis usos da palavra acima:
+        \begin{itemize}
+            \item objeto usado para dormir.
+            \item objeto usado para pescar.
+            \item descrição de um conjunto de computadores.
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
+%
+\subsection{Valor lógico de uma proposição composta}
+%
+\begin{frame}[t]
+    \frametitle{Valor lógico de uma proposição composta}
+    \framesubtitle{Logical values (interpretations) for compound propositions}
+    %
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Definição]
+        \indent Dado uma proposição composta $H(p,q, r, \dots)$ pode-se determinar seu valor lógico, V ou F, quando são conhecidos os valores lógicos de suas proposições simples respectivamente.
+        %
+        \tcblower
+        %
+        \textbf{Exemplo 1:}
+        \begin{tcolorbox}
+            Assumindo $P(p,q) = (p \rar q) \rar (p \rar p\e q)$, calcule: \\
+            $V(P)$ quando $V(p)=V(q)=F$: \\ [4pt]
+            $V(P(F,F))=V(P)=(F \rar F) \rar (F \rar F\e F)$ \\
+            $V(P)=V \rar (F \rar F)$ \\
+            $V(P) = V$
+        \end{tcolorbox}
+    \end{tcolorbox}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Valor lógico de uma proposição composta}
+    \framesubtitle{Logical values (interpretations) for compound propositions}
+    %
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Definição]
+        \textbf{Exemplo 2:}
+        \begin{tcolorbox}
+            Dado:
+            $$P(p,q,r) = (q \lr (r \rar \n p)) \ou ((\n q \rar p) \lr r)$$
+            Calcule $V(P)$ quando $V(p)=V$ e $V(q)=V(r)=F$. \\ [4pt]
+            $V(P(VFF)) = (F \lr (F \rar \n V)) \ou ((\n F \rar V) \lr F)$ \\
+            $V(P) = (F \lr (F \rar F)) \ou ((V \rar V) \lr F)$ \\
+            $V(P) = (F \lr V) \ou (V \lr F)$ \\
+            $V(P) = (F) \ou (F)$ \\
+            $V(P) = F$
+        \end{tcolorbox}
+    \end{tcolorbox}
+\end{frame}
+%
+\subsection{Uso de parêntesis}
+%
+\begin{frame}[t]
+    \frametitle{Uso de parêntesis}
+    \framesubtitle{Parentheses use}
+    %
+    \begin{block}{Definição}
+        \indent É óbvia a necessidade do uso dos parêntesis na simbolização das proposições e fórmulas. Muito utilizados para evitar qualquer tipo de ambiguidade. Assim, p. ex., a expressão $p \e q \ou r$ dá lugar, colocando parêntesis, às duas proposições a seguir:
+        \begin{center}
+            (i) $(p \e q) \ou r$ \quad e \quad (ii) $p \e (q \ou r)$
+        \end{center}
+    \end{block}
+\end{frame}
