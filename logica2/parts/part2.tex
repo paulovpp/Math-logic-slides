@@ -116,10 +116,184 @@
     \frametitle{Uso de parêntesis}
     \framesubtitle{Parentheses use}
     %
+    \setbeamercolor{block title}{use=structure,fg=white,bg=black!75!black}
+    \setbeamercolor{enumerate item}{fg=red!80!black}
+    \setbeamertemplate{enumerate items}[default]
     \begin{block}{Definição}
         \indent É óbvia a necessidade do uso dos parêntesis na simbolização das proposições e fórmulas. Muito utilizados para evitar qualquer tipo de ambiguidade. Assim, p. ex., a expressão $p \e q \ou r$ dá lugar, colocando parêntesis, às duas proposições a seguir:
+        
         \begin{center}
             (i) $(p \e q) \ou r$ \quad e \quad (ii) $p \e (q \ou r)$
         \end{center}
+
+        \indent Percebe-se aqui que ambas não possuem o mesmo significado pois para ambos os casos os conectivos principais são diferentes. \\ [4pt]
+        \indent A supressão de parêntesis nas proposições se faz mediante algumas \textbf{convenções}, mostradas a seguir:
+        \begin{enumerate}[\bf I. ]
+            \item "A ordem de precedência" para os conectivos.
+            \vspace{-2mm}
+            $$(1) \sim  \quad (2) \e \ou  \quad (3) \rar \quad (4) \lr$$
+        \end{enumerate} 
     \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Uso de parêntesis}
+    \framesubtitle{Parentheses use}
+    %
+    \setbeamercolor{block title}{use=structure,fg=white,bg=black!75!black}
+    \setbeamercolor{enumerate item}{fg=red!80!black}
+    \setbeamertemplate{enumerate items}[default]
+    \begin{block}{Definição}
+        \indent O conectivo mais fraco é, portanto o $\n$. E o mais forte $\lr$. Para o caso abaixo:
+        $$ p \rar q \lr s \e r $$
+        \indent Temos então uma \textcolor{red}{BICONDICIONAL} e nunca uma condicional. Para convertê-la em uma condicional, o uso dos parêntesis se faz necessário:
+        $$ p \rar (q \lr s \e r) $$
+        \begin{enumerate}[\bf II. ]
+            \item Quando um mesmo conectivo aparece sucessivamente repetido, suprimem-se os parêntesis, fazendo-se a \textbf{associação} a partir da esquerda. Observe as seguintes proposições:
+        \end{enumerate} 
+    \end{block}
+\end{frame}
+%
+%
+\begin{frame}[t]
+    \frametitle{Uso de parêntesis}
+    \framesubtitle{Parentheses use}
+    %
+    \setbeamercolor{enumerate item}{fg=red!80!black}
+    \setbeamertemplate{enumerate items}[default]
+    \begin{exampleblock}{Exemplos}
+        \begin{enumerate}[\bf 1.]
+            \item $((\n (\n(p \e q))) \ou (\n p))$ \qquad $\longrightarrow$ \qquad $\n \n (p \e q) \ou \n p$
+            \vspace{2mm}
+            \item $(((p \e (\n q)) \ou r) \e (\n p))$ \qquad $\longrightarrow$ \qquad $(p \ou \n q) \e r \e \n p$
+            \vspace{2mm}
+            \item $((p \ou (\n q)) \e (r \e (\n p)))$ \qquad $\longrightarrow$ \qquad $(p \e \n q) \e (r \e \n p)$
+            \vspace{2mm}
+            \item $((\n p) \rar (q \rar (\n (p \ou r))))$ \qquad $\longrightarrow$ \qquad $\n p \rar (q \rar \n (p \ou r))$
+        \end{enumerate}
+    \end{exampleblock}
+    %
+    \begin{alertblock}{Outros símbolos para os conectivos}
+        Também muito utilizado em linguagens de programação:
+        \vspace{-2mm}
+        \begin{align*}
+            &' \sim '                      &     & \text{para negação.}  \\
+            &' \centerdot '~\text{e}~'\&'  &     & \text{para conjunção.} \\
+            &' \supset '                   &     & \text{(ferradura) para condicional.} 
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+\section{Propriedades semânticas}
+%
+\subsection{Tautologia}
+%
+\begin{frame}[c]
+    \setbeamercolor{part title}{fg=white, bg=blue!65!black}
+    \begin{beamercolorbox}[rounded=true,shadow=true,sep=12pt,center]{part title}
+        \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Tautologia}
+    \framesubtitle{Tautology definitions}
+    %
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Definição]
+        Dada uma fórmula $H(p,q,r,\dots)$ ela será uma tautologia quando para qualquer valor lógico de suas proposições simples, seu valor lógico será \textbf{sempre} verdadeiro (V). Ou seja:
+        $$ \forall V(p,q,r,\dots) \to V(H)=V$$
+        %
+        \tcblower
+        %
+        \textbf{Exemplos:}
+        \begin{align*}
+            &H_1(p)   = p \ou \n p                  &        & H_2(p) = \n (p \e \n p) \\
+            &H_3(p,q) = p \ou \n (p \e q)           &        & H_4(p,q) = p \e q \rar (p \lr p) \\
+            &H_5(p,q) = p \ou (q \e \n q) \lr p     &        & H_6(p,q,r) = p \e r \rar \n q \ou r
+        \end{align*}
+    \end{tcolorbox}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Tautologia - Exemplo}
+    \framesubtitle{Tautology example}
+    %
+    \begin{exampleblock}{Exemplo}
+        \centering
+        $H_6(p,q,r) = p \e r \rar \n q \ou r $
+        %
+        \vspace{-2mm}
+        %
+        \begin{table}[t]
+            \caption{Tabela verdade para uma proposição $P(p,q,r)$ tautológica.}
+            \label{tab:exemple-tautology}
+            \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+            \textbf{p} & \textbf{q} & \textbf{r} & $\n q$ & $p \e r$ & $\n q \ou r$ & $p \e r \rar \n q \ou r$ \\ \hline
+            $V$        & $V$        & $V$        & $F$    & $V$      & $V$          & $V$                    \\ \hline
+            $V$        & $V$        & $F$        & $F$    & $F$      & $F$          & $V$                    \\ \hline
+            $V$        & $F$        & $V$        & $V$    & $V$      & $V$          & $V$                    \\ \hline
+            $V$        & $F$        & $F$        & $V$    & $F$      & $V$          & $V$                    \\ \hline
+            $F$        & $V$        & $V$        & $F$    & $F$      & $V$          & $V$                    \\ \hline
+            $F$        & $V$        & $F$        & $F$    & $F$      & $F$          & $V$                    \\ \hline
+            $F$        & $F$        & $V$        & $V$    & $F$      & $V$          & $V$                    \\ \hline
+            $F$        & $F$        & $F$        & $V$    & $F$      & $V$          & $V$                    \\ \hline
+            \end{tabular}
+        \end{table}
+    \end{exampleblock}
+\end{frame}
+%
+\subsection{Princípio da substituição para as tautologias}
+%
+\begin{frame}[t]
+    \frametitle{Princípio da substituição para as tautologias}
+    \framesubtitle{Tautological replacement principle}
+    %
+    \begin{tcolorbox}[colback=blue!5,colframe=blue!60!black,adjusted title=Definição]
+        \indent Seja $H(p,q,r,\dots)$ uma proposição tautológica qualquer e sejam $P(p,q,r,\dots)$, $Q(p,q,r,\dots)$, $R(p,q,r,\dots)$, ... proposições quaisquer formadas a parir do mesmo conjunto de proposições simples.
+        
+        \tcblower
+        
+        Realizando a substituição das proposições compostas $P, Q, R, \dots$ em $H$, a nova proposição $$ H(P,Q,R,\dots)$$ também será uma tautologia quaisquer que sejam as proposições $P, Q, R, \dots$ .
+    \end{tcolorbox}
+\end{frame}
+%
+\subsection{Contradição}
+%
+\begin{frame}[t]
+    \frametitle{Contradição}
+    \framesubtitle{Contradiction definitions}
+    %
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Definição]
+        Dada uma fórmula $H(p,q,r,\dots)$ ela será uma contradição quando para qualquer valor lógico de suas proposições simples, seu valor lógico será \textbf{sempre} falso (F). Ou seja:
+        $$ \forall V(p,q,r,\dots) \to V(H)=F$$
+        As contradições também são conhecidas como proposições contraválidas ou logicamente falsas.
+        %
+        \tcblower
+        %
+        \textbf{Exemplos:}
+        \begin{align*}
+            &H_7(p) = p \e \n p                     &        & H_8(p) = p \lr \n p \\
+            &H_9(p,q) = (p \e q) \e \n (p \ou q)    &        & H_{10}(p,q) = \n p \e (p \e \n q)
+        \end{align*}
+    \end{tcolorbox}
+\end{frame}
+%
+\subsection{Contingência}
+%
+\begin{frame}[t]
+    \frametitle{Contingência}
+    \framesubtitle{Contigency definitions}
+    %
+    \begin{alertblock}{Definição}
+        \indent Proposições que não são nem tautológicas ou contraválidas chamam-se necessariamente de contingentes. As mesmas possuem em sua última coluna de sua tabela-verdade os valores lógicos V e F \textbf{pelo menos uma vez}.\\
+        \hfill \break
+        \indent Elas também são conhecidas como \textbf{proposições indeterminadas}. \\
+        {\color{red} \rule{\linewidth}{0.5pt}}
+        \textbf{Exemplos:}
+        \begin{align*}
+            &H_{11}(p) = p \rar \n p                     &        & H_{12}(p,q) = p \ou q \rar p \e p \\
+            &H_{13}(p,q) = p \ou q \rar p                &        & H_{14}(p,q) = p \rar (p \rar q \e \n q)
+        \end{align*}
+    \end{alertblock}
 \end{frame}
