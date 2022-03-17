@@ -11,23 +11,137 @@
 \end{frame}
 %
 \begin{frame}[t]
-    \frametitle{Algumas definições}
-    \framesubtitle{Some definitions to the topic}
+    \frametitle{Implicação lógica}
+    \framesubtitle{Brief concepts over logical implication}
     %
-    \begin{tcolorbox}[colback=blue!5,colframe=blue!60!black,adjusted title=Mundo lógico]
-        O mundo da lógica conforme conhecemos pode ser dividido em duas partes distintas a seguir:
-        \begin{itemize}
-            \item Sintaxe - mundo sintático
-            \item Semântica - mundo semântico
-        \end{itemize}
-    \end{tcolorbox}
-    %    
-    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Descritivo]
-        \textbf{Sintaxe:} responsável pelo conjunto de símbolos (ALFABETO), conectivos e figuras utilizados pela lógica.
+    \begin{tcolorbox}[colback=blue!5,colframe=blue!60!black,adjusted title=Definição]
+        \indent Dada uma proposição $P(p,q,r,\dots)$; diz-se que ela implica logicamente em $Q(p,q,r,\dots)$ se para todo valor lógico verdadeiro (V) de $P(p,q,r,\dots)$ também for verdadeiro em $Q(p,q,r,\dots)$.
         %
         \tcblower
         %
-        \textbf{Semântica:} responsável pelas operações e regras de forma a utilizar da melhor forma possível o conjunto de símbolos.
+        \indent Indica-se que a proposição $P(p,q,r,\dots)$ \textbf{implica} a proposição $Q(p,q,r,\dots)$ com a notação: $$P(p,q,r,\dots) \Rightarrow Q(p,q,r,\dots)$$
+        \indent Em particular, toda proposição implica uma tautologia e somente uma contradição implica uma contradição.
     \end{tcolorbox}
+    %    
+    % \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Descritivo]
+    %     \textbf{Sintaxe:} responsável pelo conjunto de símbolos (ALFABETO), conectivos e figuras utilizados pela lógica.
+    %     %
+    % \end{tcolorbox}
 \end{frame}
 %
+\subsection{Propriedades e exemplos}
+%
+\begin{frame}[t]
+    \frametitle{Propriedades da implicação lógica}
+    \framesubtitle{Logical implication properties}
+    %
+    \setbeamercolor{block title}{use=structure,fg=white,bg=black!75!black}
+    \begin{block}{\centering Reflexiva}
+        \begin{equation}
+            P(p,q,r,\dots) \rr P(p,q,r,\dots)
+        \end{equation}
+    \end{block}
+    %
+    \begin{block}{\centering Transitiva}
+        \vspace{-4mm}
+        \begin{align}
+            &\text{Se\quad} P(p,q,r,\dots) \rr Q(p,q,r,\dots) \text{ e}\\ \nonumber
+            &P(p,q,r,\dots) \rr R(p,q,r,\dots) \text{, então} \\
+            &P(p,q,r,\dots) \rr R(p,q,r,\dots)
+        \end{align}
+    \end{block}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Propriedades da implicação lógica}
+    \framesubtitle{Logical implication properties}
+    %
+    \begin{exampleblock}{1. Regras de inferência}
+        As tabelas verdade das proposições:
+        $$ P_1(p,q) = p \e q, \qquad  P_2(p,q) = p \ou q, \qquad P_3(p,q) = p \lr q$$
+        são:
+    \end{exampleblock}
+    %
+    \vspace{-4mm}
+    %
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \small
+            \begin{table}[]
+                \caption{Tabela verdade das proposições $P_1$, $P_2$ e $P_3$.}
+                \label{tab:exemple-31}
+                \vspace{-2mm}
+                \begin{tabular}{cc||c|c|c|}
+                \cline{3-5}
+                \multicolumn{1}{l}{}                                     & \multicolumn{1}{l|}{} & $P_1$    & $P_2$     & $P_3$     \\ \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{p}} & \textbf{q}            & $p \e q$ & $p \ou q$ & $p \lr q$ \\ \hline
+                \multicolumn{1}{|c|}{$V$}                                & $V$                   & $V$      & $V$       & $V$       \\ \hline
+                \multicolumn{1}{|c|}{$V$}                                & $F$                   & $F$      & $V$       & $F$       \\ \hline
+                \multicolumn{1}{|c|}{$F$}                                & $V$                   & $F$      & $V$       & $F$       \\ \hline
+                \multicolumn{1}{|c|}{$F$}                                & $F$                   & $F$      & $F$       & $V$       \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+        %
+        \hspace{-6mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \setbeamercolor{enumerate item}{fg=red!80!black}
+            \setbeamertemplate{enumerate items}[default]
+            \begin{enumerate}[(i)]
+                \item $p \e q \rr p \ou q$
+                \item $p \e q \rr p \lr q$
+                \item $p \rr p \ou q ~e~ q \rr p \ou q$
+                \item $p \e q \rr p ~e~ p \e q \rr q$
+            \end{enumerate}
+        \end{column}
+    \end{columns}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Propriedades da implicação lógica}
+    \framesubtitle{Logical implication properties}
+    %
+    \begin{exampleblock}{2. Regra do Silogismo disjuntivo}
+        As tabelas verdade das proposições:
+        $$ P_1(p,q) = p \e q, \qquad  P_2(p,q) = p \ou q, \qquad P_3(p,q) = p \lr q$$
+        são:
+    \end{exampleblock}
+    %
+    \vspace{-4mm}
+    %
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \small
+            \begin{table}[]
+                \caption{Tabela verdade das proposições $P_1$, $P_2$ e $P_3$.}
+                \label{tab:exemple-31}
+                \vspace{-2mm}
+                \begin{tabular}{cc||c|c|c|}
+                \cline{3-5}
+                \multicolumn{1}{l}{}                                     & \multicolumn{1}{l|}{} & $P_1$    & $P_2$     & $P_3$     \\ \hline
+                \rowcolor[HTML]{EFEFEF} 
+                \multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{p}} & \textbf{q}            & $p \e q$ & $p \ou q$ & $p \lr q$ \\ \hline
+                \multicolumn{1}{|c|}{$V$}                                & $V$                   & $V$      & $V$       & $V$       \\ \hline
+                \multicolumn{1}{|c|}{$V$}                                & $F$                   & $F$      & $V$       & $F$       \\ \hline
+                \multicolumn{1}{|c|}{$F$}                                & $V$                   & $F$      & $V$       & $F$       \\ \hline
+                \multicolumn{1}{|c|}{$F$}                                & $F$                   & $F$      & $F$       & $V$       \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+        %
+        \hspace{-6mm}
+        %
+        \begin{column}{0.4\textwidth}
+            \setbeamercolor{enumerate item}{fg=red!80!black}
+            \setbeamertemplate{enumerate items}[default]
+            \begin{enumerate}[(i)]
+                \item $p \e q \rr p \ou q$
+                \item $p \e q \rr p \lr q$
+                \item $p \rr p \ou q ~e~ q \rr p \ou q$
+                \item $p \e q \rr p ~e~ p \e q \rr q$
+            \end{enumerate}
+        \end{column}
+    \end{columns}
+\end{frame}
