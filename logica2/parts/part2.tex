@@ -98,7 +98,9 @@
     \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Definição]
         \textbf{Exemplo 2:}
         \begin{tcolorbox}
+            \vspace{-2pt}
             Dado:
+            \vspace{-2pt}
             $$P(p,q,r) = (q \lr (r \rar \n p)) \ou ((\n q \rar p) \lr r)$$
             Calcule $V(P)$ quando $V(p)=V$ e $V(q)=V(r)=F$. \\ [4pt]
             $V(P(VFF)) = (F \lr (F \rar \n V)) \ou ((\n F \rar V) \lr F)$ \\
@@ -183,8 +185,9 @@
         \end{align*}
     \end{alertblock}
 \end{frame}
-
-\section{Propriedades semânticas}
+%
+% Section 3 - Propriedades semânticas 1
+\section{Propriedades semânticas 1}
 %
 \subsection{Tautologia}
 %
@@ -272,6 +275,7 @@
         \tcblower
         %
         \textbf{Exemplos:}
+        \vspace{-5pt}
         \begin{align*}
             &H_7(p) = p \e \n p                     &        & H_8(p) = p \lr \n p \\
             &H_9(p,q) = (p \e q) \e \n (p \ou q)    &        & H_{10}(p,q) = \n p \e (p \e \n q)
@@ -296,4 +300,121 @@
             &H_{13}(p,q) = p \ou q \rar p                &        & H_{14}(p,q) = p \rar (p \rar q \e \n q)
         \end{align*}
     \end{alertblock}
+\end{frame}
+%
+\subsection{Exercícios}
+%
+\begin{frame}[t]
+    \frametitle{Exercícios}
+    %
+    \begin{exampleblock}{Caracterize a proposição como tautológica, contingente ou contraditória.}
+        \begin{equation}
+            H_1(p,q) = \n (p \ou q) \rar (p \lr q)
+        \end{equation}
+    \end{exampleblock}
+    %
+    \begin{table}[]
+        \caption{Tabela verdade para uma proposição $H_1(p,q)$.}
+        \label{tab:exercise-21}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            \rowcolor[HTML]{EFEFEF} 
+            \textbf{p} & \textbf{q} & $p \ou q$ & $\n (p \ou q) $ & $p \rar q$ & $\n (p \ou q) \rar (p \rar q)$ \\ \hline
+            $V$        & $V$        &           &              &            &                                \\ \hline
+            $V$        & $F$        &           &              &            &                                \\ \hline
+            $F$        & $V$        &           &              &            &                                \\ \hline
+            $F$        & $F$        &           &              &            &                                \\ \hline
+        \end{tabular}
+        \\
+        \centering \tiny{Fonte: Filho, E. A Iniciação à lógica matemática. Ed. Nobel. 2002 - Q.1k C.5}
+    \end{table}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Exercícios}
+    %
+    \begin{exampleblock}{Caracterize a proposição como tautológica, contingente ou contraditória.}
+        \begin{equation}
+            H_2(p,q) = (p \lr q) \e p \rar q
+        \end{equation}
+    \end{exampleblock}
+    %
+    \begin{table}[]
+        \caption{Tabela verdade para uma proposição $H_2(p,q)$.}
+        \label{tab:exercise-22}
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            \rowcolor[HTML]{EFEFEF} 
+            \textbf{p} & \textbf{q} & $p \lr q$ & $(p \lr q) \e p$ & $(p \lr q) \e p \rar q$ \\ \hline
+            $V$        & $V$        &           &                  &                         \\ \hline
+            $V$        & $F$        &           &                  &                         \\ \hline
+            $F$        & $V$        &           &                  &                         \\ \hline
+            $F$        & $F$        &           &                  &                         \\ \hline
+        \end{tabular}
+        \\
+        \centering \tiny{Fonte: Filho, E. A Iniciação à lógica matemática. Ed. Nobel. 2002 - Q.1l C.5}
+    \end{table}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Exercícios}
+    %
+    \begin{exampleblock}{Caracterize a proposição como tautológica, contingente ou contraditória.}
+        \begin{equation}
+            H_3(p,q,r) = p \rar (p \ou q) \ou r
+        \end{equation}
+    \end{exampleblock}
+    %
+    \vspace{-2mm}
+    %
+    \begin{table}[]
+        \caption{Tabela verdade para uma proposição $H_3(p,q,r)$.}
+        \label{tab:exercise-23}
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            \rowcolor[HTML]{EFEFEF}
+            \textbf{p} & \textbf{q} & \textbf{r} & $p \ou q$ & $(p \ou q) \ou r$ & $ p \rar (p \ou q) \ou r$ \\ \hline
+            $V$        & $V$        & $V$        &             &                      &                                \\ \hline
+            $V$        & $V$        & $F$        &             &                      &                                \\ \hline
+            $V$        & $F$        & $V$        &             &                      &                                \\ \hline
+            $V$        & $F$        & $F$        &             &                      &                                \\ \hline
+            $F$        & $V$        & $V$        &             &                      &                                \\ \hline
+            $F$        & $V$        & $F$        &             &                      &                                \\ \hline
+            $F$        & $F$        & $V$        &             &                      &                                \\ \hline
+            $F$        & $F$        & $F$        &             &                      &                                \\ \hline
+        \end{tabular}
+        \\
+        \centering \tiny{Fonte: Filho, E. A Iniciação à lógica matemática. Ed. Nobel. 2002 - Q.4g C.5}
+    \end{table}
+\end{frame}
+%
+\begin{frame}[t]
+    \frametitle{Exercícios}
+    %
+    \begin{exampleblock}{Caracterize a proposição como tautológica, contingente ou contraditória.}
+        \begin{equation}
+            H_4(p,q,r) = p \e q \rar (p \lr q \ou r)
+        \end{equation}
+    \end{exampleblock}
+    %
+    \vspace{-4mm}
+    \begin{table}[]
+        \caption{Tabela verdade para uma proposição $H_4(p,q,r)$.}
+        \label{tab:exercise-24}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \rowcolor[HTML]{EFEFEF} 
+        \textbf{p} & \textbf{q} & \textbf{r} & $p \e q$ & $p \lr q$ & $p \lr q \ou r$ & $p \e q \rar (p \lr q \ou r)$ \\ \hline
+        $V$        & $V$        & $V$        &          &           &                 &                               \\ \hline
+        $V$        & $V$        & $F$        &          &           &                 &                               \\ \hline
+        $V$        & $F$        & $V$        &          &           &                 &                               \\ \hline
+        $V$        & $F$        & $F$        &          &           &                 &                               \\ \hline
+        $F$        & $V$        & $V$        &          &           &                 &                               \\ \hline
+        $F$        & $V$        & $F$        &          &           &                 &                               \\ \hline
+        $F$        & $F$        & $V$        &          &           &                 &                               \\ \hline
+        $F$        & $F$        & $F$        &          &           &                 &                               \\ \hline
+        \end{tabular}
+        \\
+        \centering \tiny{Fonte: Filho, E. A Iniciação à lógica matemática. Ed. Nobel. 2002 - Q.4h C.5}
+        \end{table}
 \end{frame}
